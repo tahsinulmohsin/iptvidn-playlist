@@ -7,7 +7,16 @@
     "test": "node scraper/validate.js",
     "dev": "vercel dev"
   },
-  "keywords": ["iptv", "m3u8", "playlist", "iptvidn", "vercel"],
+  "keywords": [
+    "iptv",
+    "m3u8",
+    "playlist",
+    "iptvidn",
+    "vercel"
+  ],
   "author": "tahsinulmohsin",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.7.0"
+  }
 }
