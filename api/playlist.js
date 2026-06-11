@@ -1,262 +1,191 @@
-const chromium = require('@sparticuz/chromium');
-const puppeteer = require('puppeteer-core');
-
 /**
  * Vercel Serverless Function — IPTVIDN M3U8 Playlist Generator
- * 
- * Scrapes channels from iptvidn.com using headless Chrome,
- * generates an M3U8 playlist, and serves it with 20-minute CDN caching.
- * 
+ *
+ * Scrapes channel data from iptvidn.com using plain HTTP requests (no Puppeteer),
+ * resolves each channel's Flussonic stream token, and generates a valid M3U8
+ * playlist with direct MPEG-TS stream URLs playable in VLC, TiviMate, etc.
+ *
  * Endpoint: GET /api/playlist
  * Cache: s-maxage=1200 (20 min CDN), stale-while-revalidate=600 (10 min grace)
  */
+
+const IPTVIDN_BASE = 'http://iptvidn.com';
+
+const CATEGORY_MAP = {
+  lsports: 'Live Sports',
+  sports: 'Sports',
+  news: 'News',
+  bangla: 'Bangla',
+  hindi: 'Hindi',
+  movies: 'Movies',
+  music: 'Music',
+  documentary: 'Documentary',
+  kids: 'Kids',
+};
+
+const HEADERS = {
+  'User-Agent':
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
+  Referer: 'http://iptvidn.com/',
+  Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+};
+
 module.exports = async function handler(req, res) {
+  if (req.method === 'OPTIONS') {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
+    return res.status(200).end();
+  }
+
   if (req.method !== 'GET') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
   try {
-    console.log('🚀 IPTVIDN Scraper started at', new Date().toISOString());
+    console.log('🚀 IPTVIDN scraper started at', new Date().toISOString());
 
-    // Launch serverless-compatible Chromium
-    const browser = await puppeteer.launch({
-      args: chromium.args,
-      defaultViewport: chromium.defaultViewport,
-      executablePath: await chromium.executablePath(),
-      headless: chromium.headless,
-    });
+    // ── Step 1: Fetch the main page HTML ────────────────────────────
+    const mainRes = await fetchWithTimeout(IPTVIDN_BASE, { headers: HEADERS }, 15000);
+    const mainHtml = await mainRes.text();
 
-    const allChannels = [];
-    const seenUrls = new Set();
-    const interceptedStreams = new Map();
+    // ── Step 2: Extract all channel entries from the HTML ────────────
+    const channelEntries = extractChannelsFromHtml(mainHtml);
+    console.log(`📺 Found ${channelEntries.length} channel entries`);
 
-    try {
-      const page = await browser.newPage();
-
-      // Set realistic user agent
-      await page.setUserAgent(
-        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36'
-      );
-
-      // Intercept network to capture .m3u8 URLs
-      await page.setRequestInterception(true);
-      page.on('request', (request) => {
-        const type = request.resourceType();
-        if (['image', 'font', 'stylesheet', 'media'].includes(type)) {
-          request.abort();
-        } else {
-          request.continue();
-        }
-      });
-
-      page.on('response', (response) => {
-        const url = response.url();
-        if (url.includes('.m3u8') || url.includes('/live/') || url.includes('/stream/')) {
-          interceptedStreams.set(url, true);
-        }
-      });
-
-      // Navigate to main page
-      console.log('📡 Navigating to iptvidn.com');
-      await page.goto('http://iptvidn.com', {
-        waitUntil: 'networkidle2',
-        timeout: 25000,
-      });
-      await sleep(3000);
-
-      // Extract channels from main page DOM
-      const mainChannels = await extractChannelsFromPage(page, 'All');
-      console.log(`   Main page: ${mainChannels.length} channels`);
-
-      for (const ch of mainChannels) {
-        if (ch.url && !seenUrls.has(ch.url)) {
-          seenUrls.add(ch.url);
-          allChannels.push(ch);
-        }
-      }
-
-      // Find all navigation links
-      const navLinks = await page.evaluate(() => {
-        const links = [];
-        document.querySelectorAll('a[href]').forEach(a => {
-          const href = a.getAttribute('href');
-          const text = a.textContent.trim();
-          if (href && text && !href.includes('.apk') && !href.startsWith('#') && !href.startsWith('javascript:')) {
-            links.push({ href, text });
-          }
-        });
-        return links;
-      });
-
-      // Visit each internal link
-      for (const link of navLinks) {
-        try {
-          let fullUrl = link.href;
-          if (fullUrl.startsWith('/')) fullUrl = 'http://iptvidn.com' + fullUrl;
-          else if (!fullUrl.startsWith('http')) fullUrl = 'http://iptvidn.com/' + fullUrl;
-
-          if (!fullUrl.includes('iptvidn.com')) continue;
-          if (fullUrl.includes('.apk')) continue;
-
-          console.log(`   📺 ${link.text} → ${fullUrl}`);
-          await page.goto(fullUrl, { waitUntil: 'networkidle2', timeout: 15000 }).catch(() => {});
-          await sleep(2000);
-
-          const pageChannels = await extractChannelsFromPage(page, link.text || 'Uncategorized');
-          for (const ch of pageChannels) {
-            if (ch.url && !seenUrls.has(ch.url)) {
-              seenUrls.add(ch.url);
-              allChannels.push(ch);
-            }
-          }
-        } catch (e) {
-          console.warn(`   ⚠️ Error: ${e.message}`);
-        }
-      }
-
-      // Add intercepted network streams
-      for (const [streamUrl] of interceptedStreams) {
-        if (!seenUrls.has(streamUrl)) {
-          seenUrls.add(streamUrl);
-          allChannels.push({
-            name: extractNameFromUrl(streamUrl),
-            url: streamUrl,
-            logo: '',
-            category: 'Discovered',
-          });
-        }
-      }
-    } finally {
-      await browser.close();
+    if (channelEntries.length === 0) {
+      return res.status(502).json({ error: 'No channels found on iptvidn.com' });
     }
 
-    console.log(`✅ Found ${allChannels.length} unique channels`);
+    // ── Step 3: Resolve stream URLs for each channel ────────────────
+    // Batch fetch play.php for each channel to get tokens/embed URLs
+    const batchSize = 10;
+    const resolvedChannels = [];
 
-    // Generate M3U8
-    const playlist = generateM3U8(allChannels);
+    for (let i = 0; i < channelEntries.length; i += batchSize) {
+      const batch = channelEntries.slice(i, i + batchSize);
+      const results = await Promise.allSettled(
+        batch.map((ch) => resolveStreamUrl(ch))
+      );
+      for (const r of results) {
+        if (r.status === 'fulfilled' && r.value) {
+          resolvedChannels.push(r.value);
+        }
+      }
+    }
 
-    // Set response headers — 20 min CDN cache + stale-while-revalidate
-    res.setHeader('Content-Type', 'application/vnd.apple.mpegurl');
+    console.log(`✅ Resolved ${resolvedChannels.length}/${channelEntries.length} streams`);
+
+    // ── Step 4: Generate M3U8 playlist ──────────────────────────────
+    const playlist = buildM3U8(resolvedChannels);
+
+    // ── Step 5: Send response with cache headers ────────────────────
+    res.setHeader('Content-Type', 'application/vnd.apple.mpegurl; charset=utf-8');
+    res.setHeader('Content-Disposition', 'inline; filename="playlist.m3u8"');
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
     res.setHeader('Cache-Control', 's-maxage=1200, stale-while-revalidate=600');
-    res.setHeader('X-Playlist-Channels', String(allChannels.length));
+    res.setHeader('X-Playlist-Channels', String(resolvedChannels.length));
     res.setHeader('X-Playlist-Updated', new Date().toISOString());
 
     return res.status(200).send(playlist);
   } catch (err) {
     console.error('❌ Scraper error:', err);
-    return res.status(500).json({
-      error: 'Failed to generate playlist',
-      message: err.message,
-    });
+    return res
+      .status(500)
+      .json({ error: 'Failed to generate playlist', message: err.message });
   }
 };
 
-// ─── Channel Extraction ──────────────────────────────────────────────
+// ─────────────────────────────────────────────────────────────────────
+// HTML Parsing — extract channels from iptvidn.com main page
+// ─────────────────────────────────────────────────────────────────────
 
-async function extractChannelsFromPage(page, defaultCategory) {
-  return page.evaluate((category) => {
-    const results = [];
-    const seen = new Set();
+function extractChannelsFromHtml(html) {
+  const channels = [];
+  const seen = new Set();
 
-    // 1. Video/source elements
-    document.querySelectorAll('video source, video[src]').forEach(el => {
-      const src = el.getAttribute('src') || el.src;
-      if (src && !seen.has(src)) {
-        seen.add(src);
-        results.push({ name: document.title || 'Unknown', url: src, logo: '', category });
-      }
-    });
+  // Pattern: <div class="item CATEGORY">..onclick="tv.location.href='play.php?stream=NAME'"...<img src="IMG">
+  const regex =
+    /<div\s+class="item\s+([^"]+)"[\s\S]*?play\.php\?stream=([^'"&\s]+)[\s\S]*?<img\s+src="([^"]*)"[^>]*>/g;
 
-    // 2. Iframe embeds
-    document.querySelectorAll('iframe[src]').forEach(iframe => {
-      const src = iframe.getAttribute('src') || iframe.src;
-      if (src && (src.includes('.m3u8') || src.includes('/live/') || src.includes('/embed/'))) {
-        if (!seen.has(src)) {
-          seen.add(src);
-          results.push({ name: iframe.getAttribute('title') || 'Stream', url: src, logo: '', category });
-        }
-      }
-    });
+  let match;
+  while ((match = regex.exec(html)) !== null) {
+    const cssClass = match[1].trim();
+    const streamName = match[2];
+    const imgSrc = match[3];
 
-    // 3. Channel cards / grid items
-    const selectors = [
-      '.channel-card', '.channel-item', '.card', '.grid-item',
-      '.channel', '.tv-channel', '.stream-item',
-      '[class*="channel"]', '[class*="stream"]', '[class*="card"]'
-    ];
-    for (const sel of selectors) {
-      document.querySelectorAll(sel).forEach(card => {
-        const link = card.querySelector('a[href]');
-        const img = card.querySelector('img');
-        const nameEl = card.querySelector('h2, h3, h4, h5, .title, .name, span');
-        const href = link?.getAttribute('href') || '';
-        const name = nameEl?.textContent?.trim() || card.textContent?.trim().substring(0, 50) || 'Unknown';
-        const logo = img?.src || img?.getAttribute('data-src') || '';
-        if (href && !seen.has(href)) {
-          seen.add(href);
-          results.push({ name, url: href, logo, category });
-        }
+    if (seen.has(streamName)) continue;
+    seen.add(streamName);
+
+    const category = CATEGORY_MAP[cssClass] || cssClass;
+    const displayName = streamName.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+    const logo = imgSrc.startsWith('http') ? imgSrc : `${IPTVIDN_BASE}/${imgSrc}`;
+
+    channels.push({ streamName, displayName, category, logo });
+  }
+
+  // Also catch any play.php streams NOT matched by the regex above
+  const allStreams = [...html.matchAll(/play\.php\?stream=([^'"&\s]+)/g)];
+  for (const m of allStreams) {
+    if (!seen.has(m[1])) {
+      seen.add(m[1]);
+      channels.push({
+        streamName: m[1],
+        displayName: m[1].replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase()),
+        category: 'Other',
+        logo: '',
       });
     }
+  }
 
-    // 4. Anchor tags with stream URLs
-    document.querySelectorAll('a[href]').forEach(a => {
-      const href = a.getAttribute('href') || '';
-      if (href.includes('.m3u8') || href.includes('/live/') || href.includes('/stream/') || href.includes('/play/')) {
-        if (!seen.has(href)) {
-          seen.add(href);
-          results.push({
-            name: a.textContent?.trim() || 'Unknown',
-            url: href,
-            logo: a.querySelector('img')?.src || '',
-            category,
-          });
-        }
-      }
-    });
-
-    // 5. Data attributes
-    document.querySelectorAll('[data-url], [data-src], [data-stream], [data-href]').forEach(el => {
-      const url = el.getAttribute('data-url') || el.getAttribute('data-src') ||
-                  el.getAttribute('data-stream') || el.getAttribute('data-href') || '';
-      if (url && !seen.has(url)) {
-        seen.add(url);
-        results.push({
-          name: el.textContent?.trim()?.substring(0, 50) || 'Unknown',
-          url, logo: el.querySelector('img')?.src || '', category,
-        });
-      }
-    });
-
-    // 6. Inline script M3U8 URLs
-    document.querySelectorAll('script:not([src])').forEach(script => {
-      const content = script.textContent || '';
-      const regex = /["'](https?:\/\/[^"'\s]+\.m3u8[^"'\s]*)["']/g;
-      let match;
-      while ((match = regex.exec(content)) !== null) {
-        if (!seen.has(match[1])) {
-          seen.add(match[1]);
-          results.push({ name: 'Discovered Stream', url: match[1], logo: '', category });
-        }
-      }
-      const streamRegex = /["'](https?:\/\/[^"'\s]*\/(?:live|stream)\/[^"'\s]+)["']/g;
-      while ((match = streamRegex.exec(content)) !== null) {
-        if (!seen.has(match[1])) {
-          seen.add(match[1]);
-          results.push({ name: 'Discovered Stream', url: match[1], logo: '', category });
-        }
-      }
-    });
-
-    return results;
-  }, defaultCategory);
+  return channels;
 }
 
-// ─── M3U8 Generator ─────────────────────────────────────────────────
+// ─────────────────────────────────────────────────────────────────────
+// Stream Resolution — get token from play.php, construct MPEG-TS URL
+// ─────────────────────────────────────────────────────────────────────
 
-function generateM3U8(channels) {
+async function resolveStreamUrl(channel) {
+  try {
+    const playUrl = `${IPTVIDN_BASE}/play.php?stream=${channel.streamName}`;
+    const res = await fetchWithTimeout(playUrl, { headers: HEADERS }, 10000);
+
+    if (!res.ok) return null;
+
+    const html = await res.text();
+
+    // Extract the iframe embed URL: src="http://IP:PORT/STREAM/embed.html?token=TOKEN&remote=..."
+    const embedMatch = html.match(
+      /src="http:\/\/([^:]+:\d+)\/([^/]+)\/embed\.html\?token=([^"&]+)(?:&remote=([^"]*))?"/ 
+    );
+
+    if (!embedMatch) return null;
+
+    const host = embedMatch[1];
+    const streamPath = embedMatch[2];
+    const token = embedMatch[3];
+    const remote = embedMatch[4] || 'no_check_ip';
+
+    // Construct the MPEG-TS stream URL (verified working with Flussonic)
+    const streamUrl = `http://${host}/${streamPath}/mpegts?token=${token}&remote=${remote}`;
+
+    return {
+      ...channel,
+      url: streamUrl,
+      host,
+      token,
+    };
+  } catch (e) {
+    console.warn(`⚠️ Failed to resolve ${channel.streamName}: ${e.message}`);
+    return null;
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────
+// M3U8 Generator
+// ─────────────────────────────────────────────────────────────────────
+
+function buildM3U8(channels) {
   const timestamp = new Date().toISOString();
   const lines = [
     '#EXTM3U',
@@ -268,44 +197,43 @@ function generateM3U8(channels) {
     '',
   ];
 
+  // Sort by category then name
   const sorted = [...channels].sort((a, b) => {
-    const cat = (a.category || '').localeCompare(b.category || '');
-    return cat !== 0 ? cat : (a.name || '').localeCompare(b.name || '');
+    const cat = a.category.localeCompare(b.category);
+    return cat !== 0 ? cat : a.displayName.localeCompare(b.displayName);
   });
 
   for (const ch of sorted) {
-    const name = (ch.name || 'Unknown').trim().replace(/\s+/g, ' ');
-    const logo = (ch.logo || '').trim();
-    const category = (ch.category || 'Uncategorized').trim();
-    const url = (ch.url || '').trim();
+    if (!ch.url) continue;
 
-    if (!url || url === '#' || url === '/') continue;
-
-    let extinf = `#EXTINF:-1 tvg-name="${esc(name)}"`;
-    if (logo) extinf += ` tvg-logo="${esc(logo)}"`;
-    extinf += ` group-title="${esc(category)}",${name}`;
+    let extinf = `#EXTINF:-1 tvg-name="${esc(ch.displayName)}"`;
+    if (ch.logo) extinf += ` tvg-logo="${esc(ch.logo)}"`;
+    extinf += ` group-title="${esc(ch.category)}",${ch.displayName}`;
 
     lines.push(extinf);
-    lines.push(url);
+    lines.push(ch.url);
   }
 
   return lines.join('\n') + '\n';
 }
 
-// ─── Helpers ─────────────────────────────────────────────────────────
+// ─────────────────────────────────────────────────────────────────────
+// Helpers
+// ─────────────────────────────────────────────────────────────────────
 
-function esc(s) { return s.replace(/"/g, "'"); }
+function esc(s) {
+  return (s || '').replace(/"/g, "'");
+}
 
-function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
-
-function extractNameFromUrl(url) {
+async function fetchWithTimeout(url, options, timeoutMs) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
   try {
-    const parts = new URL(url).pathname.split('/').filter(Boolean);
-    for (const p of parts) {
-      if (!p.includes('.') && !['live', 'stream', 'index'].includes(p)) {
-        return p.replace(/[-_]/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
-      }
-    }
-  } catch {}
-  return 'Unknown Channel';
+    const res = await fetch(url, { ...options, signal: controller.signal });
+    clearTimeout(timer);
+    return res;
+  } catch (e) {
+    clearTimeout(timer);
+    throw e;
+  }
 }
