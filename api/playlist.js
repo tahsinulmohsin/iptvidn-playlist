@@ -9,7 +9,7 @@
  * Cache: s-maxage=1200 (20 min CDN), stale-while-revalidate=600 (10 min grace)
  */
 
-const IPTVIDN_BASE = 'http://iptvidn.com';
+const IPTVIDN_BASE = 'http://103.89.248.30';
 
 const CATEGORY_MAP = {
   lsports: 'Live Sports',
@@ -24,6 +24,7 @@ const CATEGORY_MAP = {
 };
 
 const HEADERS = {
+  Host: 'iptvidn.com',
   'User-Agent':
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
   Referer: 'http://iptvidn.com/',
