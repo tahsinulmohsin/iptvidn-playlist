@@ -1,15 +1,8 @@
-/**
- * Vercel Serverless Function — IPTVIDN M3U8 Playlist Generator
- *
- * Scrapes channel data from iptvidn.com using plain HTTP requests (no Puppeteer),
- * resolves each channel's Flussonic stream token, and generates a valid M3U8
- * playlist with direct MPEG-TS stream URLs playable in VLC, TiviMate, etc.
- *
- * Endpoint: GET /api/playlist
- * Cache: s-maxage=1200 (20 min CDN), stale-while-revalidate=600 (10 min grace)
- */
+export const config = {
+  runtime: 'edge',
+};
 
-const IPTVIDN_BASE = 'http://103.89.248.30';
+const IPTVIDN_BASE = 'http://iptvidn.com'; // Using domain, Edge runs on Cloudflare
 
 const CATEGORY_MAP = {
   lsports: 'Live Sports',
@@ -24,29 +17,34 @@ const CATEGORY_MAP = {
 };
 
 const HEADERS = {
-  Host: 'iptvidn.com',
   'User-Agent':
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
   Referer: 'http://iptvidn.com/',
-  Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
 };
 
-module.exports = async function handler(req, res) {
+export default async function handler(req) {
   if (req.method === 'OPTIONS') {
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
-    return res.status(200).end();
+    return new Response(null, {
+      status: 200,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'GET, OPTIONS',
+      },
+    });
   }
 
   if (req.method !== 'GET') {
-    return res.status(405).json({ error: 'Method not allowed' });
+    return new Response(JSON.stringify({ error: 'Method not allowed' }), {
+      status: 405,
+      headers: { 'Content-Type': 'application/json' },
+    });
   }
 
   try {
-    console.log('🚀 IPTVIDN scraper started at', new Date().toISOString());
+    console.log('🚀 IPTVIDN Edge scraper started at', new Date().toISOString());
 
     // ── Step 1: Fetch the main page HTML ────────────────────────────
-    const mainRes = await fetchWithTimeout(IPTVIDN_BASE, { headers: HEADERS }, 15000);
+    const mainRes = await fetchWithTimeout(IPTVIDN_BASE, { headers: HEADERS }, 10000);
     const mainHtml = await mainRes.text();
 
     // ── Step 2: Extract all channel entries from the HTML ────────────
@@ -54,11 +52,13 @@ module.exports = async function handler(req, res) {
     console.log(`📺 Found ${channelEntries.length} channel entries`);
 
     if (channelEntries.length === 0) {
-      return res.status(502).json({ error: 'No channels found on iptvidn.com' });
+      return new Response(JSON.stringify({ error: 'No channels found on iptvidn.com' }), {
+        status: 502,
+        headers: { 'Content-Type': 'application/json' },
+      });
     }
 
     // ── Step 3: Resolve stream URLs for ALL channels in parallel ────
-    // Each play.php request has a 5s timeout; all run concurrently
     const results = await Promise.allSettled(
       channelEntries.map((ch) => resolveStreamUrl(ch))
     );
@@ -72,22 +72,24 @@ module.exports = async function handler(req, res) {
     const playlist = buildM3U8(resolvedChannels);
 
     // ── Step 5: Send response with cache headers ────────────────────
-    res.setHeader('Content-Type', 'application/vnd.apple.mpegurl; charset=utf-8');
-    res.setHeader('Content-Disposition', 'inline; filename="playlist.m3u8"');
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
-    res.setHeader('Cache-Control', 's-maxage=1200, stale-while-revalidate=600');
-    res.setHeader('X-Playlist-Channels', String(resolvedChannels.length));
-    res.setHeader('X-Playlist-Updated', new Date().toISOString());
-
-    return res.status(200).send(playlist);
+    return new Response(playlist, {
+      status: 200,
+      headers: {
+        'Content-Type': 'application/vnd.apple.mpegurl; charset=utf-8',
+        'Content-Disposition': 'inline; filename="playlist.m3u8"',
+        'Access-Control-Allow-Origin': '*',
+        'Cache-Control': 's-maxage=1200, stale-while-revalidate=600',
+        'X-Playlist-Channels': String(resolvedChannels.length),
+      },
+    });
   } catch (err) {
     console.error('❌ Scraper error:', err);
-    return res
-      .status(500)
-      .json({ error: 'Failed to generate playlist', message: err.message });
+    return new Response(
+      JSON.stringify({ error: 'Failed to generate playlist', message: err.message }),
+      { status: 500, headers: { 'Content-Type': 'application/json' } }
+    );
   }
-};
+}
 
 // ─────────────────────────────────────────────────────────────────────
 // HTML Parsing — extract channels from iptvidn.com main page
@@ -97,7 +99,6 @@ function extractChannelsFromHtml(html) {
   const channels = [];
   const seen = new Set();
 
-  // Pattern: <div class="item CATEGORY">..onclick="tv.location.href='play.php?stream=NAME'"...<img src="IMG">
   const regex =
     /<div\s+class="item\s+([^"]+)"[\s\S]*?play\.php\?stream=([^'"&\s]+)[\s\S]*?<img\s+src="([^"]*)"[^>]*>/g;
 
@@ -117,7 +118,6 @@ function extractChannelsFromHtml(html) {
     channels.push({ streamName, displayName, category, logo });
   }
 
-  // Also catch any play.php streams NOT matched by the regex above
   const allStreams = [...html.matchAll(/play\.php\?stream=([^'"&\s]+)/g)];
   for (const m of allStreams) {
     if (!seen.has(m[1])) {
@@ -147,7 +147,6 @@ async function resolveStreamUrl(channel) {
 
     const html = await res.text();
 
-    // Extract the iframe embed URL: src="http://IP:PORT/STREAM/embed.html?token=TOKEN&remote=..."
     const embedMatch = html.match(
       /src="http:\/\/([^:]+:\d+)\/([^/]+)\/embed\.html\?token=([^"&]+)(?:&remote=([^"]*))?"/ 
     );
@@ -159,15 +158,9 @@ async function resolveStreamUrl(channel) {
     const token = embedMatch[3];
     const remote = embedMatch[4] || 'no_check_ip';
 
-    // Construct the MPEG-TS stream URL (verified working with Flussonic)
     const streamUrl = `http://${host}/${streamPath}/mpegts?token=${token}&remote=${remote}`;
 
-    return {
-      ...channel,
-      url: streamUrl,
-      host,
-      token,
-    };
+    return { ...channel, url: streamUrl, host, token };
   } catch (e) {
     console.warn(`⚠️ Failed to resolve ${channel.streamName}: ${e.message}`);
     return null;
@@ -190,7 +183,6 @@ function buildM3U8(channels) {
     '',
   ];
 
-  // Sort by category then name
   const sorted = [...channels].sort((a, b) => {
     const cat = a.category.localeCompare(b.category);
     return cat !== 0 ? cat : a.displayName.localeCompare(b.displayName);
@@ -209,10 +201,6 @@ function buildM3U8(channels) {
 
   return lines.join('\n') + '\n';
 }
-
-// ─────────────────────────────────────────────────────────────────────
-// Helpers
-// ─────────────────────────────────────────────────────────────────────
 
 function esc(s) {
   return (s || '').replace(/"/g, "'");
