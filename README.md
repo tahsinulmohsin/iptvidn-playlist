@@ -4,17 +4,16 @@
 
 ### Auto-updated M3U8 playlist from [iptvidn.com](http://iptvidn.com)
 
-![GitHub Actions](https://img.shields.io/github/actions/workflow/status/YOUR_USERNAME/iptvidn-playlist/update-playlist.yml?label=Playlist%20Update&logo=githubactions&logoColor=white&style=for-the-badge)
 ![Vercel](https://img.shields.io/badge/Hosted%20on-Vercel-black?style=for-the-badge&logo=vercel)
-![License](https://img.shields.io/github/license/YOUR_USERNAME/iptvidn-playlist?style=for-the-badge)
-![Last Commit](https://img.shields.io/github/last-commit/YOUR_USERNAME/iptvidn-playlist?style=for-the-badge&logo=github)
+![License](https://img.shields.io/github/license/tahsinulmohsin/iptvidn-playlist?style=for-the-badge)
+![Last Commit](https://img.shields.io/github/last-commit/tahsinulmohsin/iptvidn-playlist?style=for-the-badge&logo=github)
 
 ---
 
 **🔗 Playlist URL:**
 
 ```
-https://your-project.vercel.app/playlist.m3u8
+https://iptvidn-playlist.vercel.app/api/playlist
 ```
 
 *Copy this URL into your favorite IPTV player (VLC, TiviMate, IPTV Smarters, etc.)*
@@ -25,8 +24,9 @@ https://your-project.vercel.app/playlist.m3u8
 
 ## ✨ Features
 
-- 🔄 **Auto-Updates Every 20 Minutes** — GitHub Actions scrapes the latest channels
-- 🌐 **Hosted on Vercel** — Fast, reliable CDN delivery worldwide
+- 🔄 **Auto-Updates Every 20 Minutes** — Vercel CDN cache auto-refreshes, no cron needed
+- ⚡ **Serverless Powered** — Scrapes on-demand using headless Chrome on Vercel Functions
+- 🌐 **Global CDN** — Fast delivery worldwide via Vercel Edge Network
 - 📋 **Valid M3U8 Format** — Compatible with all major IPTV players
 - 🏷️ **Categorized Channels** — Organized by group (Sports, News, Bangla, Hindi, etc.)
 - 📦 **Automated Releases** — Weekly GitHub releases with playlist snapshots
@@ -36,18 +36,18 @@ https://your-project.vercel.app/playlist.m3u8
 
 ## 🚀 Quick Start
 
-### Option 1: Direct URL
+### Option 1: Direct URL (Recommended)
 Copy the playlist URL and paste it into your IPTV player:
 ```
-https://your-project.vercel.app/playlist.m3u8
+https://iptvidn-playlist.vercel.app/api/playlist
 ```
 
 ### Option 2: Download
 Download the latest `playlist.m3u8` from the [Releases](../../releases/latest) page.
 
-### Option 3: Raw GitHub
+### Option 3: Static Fallback
 ```
-https://raw.githubusercontent.com/YOUR_USERNAME/iptvidn-playlist/main/public/playlist.m3u8
+https://iptvidn-playlist.vercel.app/playlist.m3u8
 ```
 
 ---
@@ -56,12 +56,28 @@ https://raw.githubusercontent.com/YOUR_USERNAME/iptvidn-playlist/main/public/pla
 
 ```mermaid
 flowchart LR
-    A["⏰ GitHub Actions\n(every 20 min)"] -->|Run Puppeteer| B["🌐 iptvidn.com"]
-    B -->|Extract channels| C["📝 Generate\nplaylist.m3u8"]
-    C -->|git push| D["📦 GitHub Repo"]
-    D -->|Auto-deploy| E["▲ Vercel CDN"]
-    E -->|Public URL| F["📺 IPTV Players"]
+    A["📺 IPTV Player"] -->|GET /api/playlist| B["▲ Vercel CDN"]
+    B -->|Cache HIT < 20min| A
+    B -->|Cache MISS| C["⚡ Serverless Function"]
+    C -->|Puppeteer| D["🌐 iptvidn.com"]
+    D -->|Channels + Streams| C
+    C -->|M3U8 + Cache Headers| B
 ```
+
+### How Auto-Updates Work (No Cron Needed!)
+
+Instead of a cron job, the system uses **Vercel CDN caching** with smart headers:
+
+| Header | Value | Effect |
+|--------|-------|--------|
+| `s-maxage` | `1200` (20 min) | CDN serves cached response for 20 minutes |
+| `stale-while-revalidate` | `600` (10 min) | After 20 min, serves stale while fetching fresh data |
+
+This means:
+1. **First request** → Scrapes iptvidn.com, caches result for 20 min
+2. **Within 20 min** → Instant response from CDN (no scraping)
+3. **After 20 min** → Serves stale immediately, re-scrapes in background
+4. **Result** → Always fresh within ~20 min, always fast response
 
 ---
 
@@ -69,10 +85,12 @@ flowchart LR
 
 | Component | Technology |
 |-----------|------------|
-| **Scraper** | Node.js + Puppeteer (headless Chrome) |
-| **CI/CD** | GitHub Actions (cron schedule) |
-| **Hosting** | Vercel (static deployment) |
+| **Scraper** | Puppeteer Core + @sparticuz/chromium (serverless headless Chrome) |
+| **Backend** | Vercel Serverless Functions (Node.js 20) |
+| **Hosting** | Vercel (CDN + static + serverless) |
+| **Caching** | Vercel Edge CDN (s-maxage=1200) |
 | **Format** | M3U8 with EXTINF metadata |
+| **Releases** | GitHub Actions (weekly automated) |
 
 ---
 
@@ -80,21 +98,19 @@ flowchart LR
 
 ```
 iptvidn-playlist/
-├── .github/workflows/
-│   ├── update-playlist.yml   # 20-min cron update
-│   └── release.yml           # Weekly automated release
+├── api/
+│   └── playlist.js               # Serverless scraper + M3U8 generator
 ├── public/
-│   ├── playlist.m3u8         # Generated playlist (auto-updated)
-│   └── index.html            # Landing page
+│   ├── playlist.m3u8             # Static fallback playlist
+│   └── index.html                # Landing page
 ├── scraper/
-│   ├── index.js              # Main scraper orchestrator
-│   ├── parser.js             # DOM channel extractor
-│   ├── generator.js          # M3U8 file generator
-│   └── validate.js           # Playlist validator
-├── vercel.json               # Vercel configuration
-├── package.json              # Dependencies
-├── README.md                 # This file
-└── LICENSE                   # MIT License
+│   └── validate.js               # Playlist validator
+├── .github/workflows/
+│   └── release.yml               # Weekly automated releases
+├── vercel.json                   # Vercel config (functions + headers)
+├── package.json                  # Dependencies
+├── README.md                     # This file
+└── LICENSE                       # MIT License
 ```
 
 ---
@@ -102,7 +118,6 @@ iptvidn-playlist/
 ## 🔧 Deploy Your Own
 
 ### Prerequisites
-- [Node.js](https://nodejs.org/) 20+
 - [GitHub Account](https://github.com)
 - [Vercel Account](https://vercel.com) (connected to GitHub)
 
@@ -113,17 +128,14 @@ iptvidn-playlist/
 2. **Connect to Vercel:**
    - Go to [vercel.com/new](https://vercel.com/new)
    - Import your forked repository
-   - Deploy (zero config needed)
+   - Deploy (zero config needed — `vercel.json` handles everything)
 
-3. **Update badge URLs:**
-   - Replace `YOUR_USERNAME` in `README.md` with your GitHub username
+3. **Your playlist URL:**
+   ```
+   https://your-project.vercel.app/api/playlist
+   ```
 
-4. **Enable GitHub Actions:**
-   - Go to your repo → Actions tab → Enable workflows
-   - The playlist will start auto-updating every 20 minutes
-
-5. **Update Vercel URL:**
-   - Replace `your-project.vercel.app` with your actual Vercel URL
+4. **That's it!** No cron jobs, no environment variables, no external services.
 
 ---
 
@@ -131,20 +143,17 @@ iptvidn-playlist/
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR_USERNAME/iptvidn-playlist.git
+git clone https://github.com/tahsinulmohsin/iptvidn-playlist.git
 cd iptvidn-playlist
 
 # Install dependencies
 npm install
 
-# Run the scraper
-npm run scrape
+# Run locally with Vercel dev
+npm run dev
 
-# Validate the playlist
-npm test
-
-# Preview on Vercel (optional)
-npx vercel dev
+# Access the playlist
+curl http://localhost:3000/api/playlist
 ```
 
 ---

@@ -1,16 +1,17 @@
 {
   "name": "iptvidn-playlist",
   "version": "1.0.0",
-  "description": "Auto-updated M3U8 playlist generator for iptvidn.com channels",
-  "main": "scraper/index.js",
+  "description": "Auto-updated M3U8 playlist generator for iptvidn.com channels — powered by Vercel Serverless Functions",
+  "main": "api/playlist.js",
   "scripts": {
-    "scrape": "node scraper/index.js",
-    "test": "node scraper/validate.js"
+    "test": "node scraper/validate.js",
+    "dev": "vercel dev"
   },
-  "keywords": ["iptv", "m3u8", "playlist", "iptvidn"],
-  "author": "Tahsin",
+  "keywords": ["iptv", "m3u8", "playlist", "iptvidn", "vercel"],
+  "author": "tahsinulmohsin",
   "license": "MIT",
   "dependencies": {
-    "puppeteer": "^23.0.0"
+    "@sparticuz/chromium": "^131.0.0",
+    "puppeteer-core": "^23.0.0"
   }
 }

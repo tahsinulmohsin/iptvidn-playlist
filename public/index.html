@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IPTVIDN Playlist — Auto-Updated M3U8</title>
-  <meta name="description" content="Auto-updated M3U8 playlist from iptvidn.com. Updated every 20 minutes via GitHub Actions.">
+  <meta name="description" content="Auto-updated M3U8 playlist from iptvidn.com. Updated every 20 minutes via Vercel Serverless Functions.">
   <meta name="theme-color" content="#0a0a0a">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -361,7 +361,7 @@
     <div class="url-card">
       <div class="url-label">📡 Playlist URL</div>
       <div class="url-container">
-        <div class="url-display" id="playlistUrl">https://your-project.vercel.app/playlist.m3u8</div>
+        <div class="url-display" id="playlistUrl">https://iptvidn-playlist.vercel.app/api/playlist</div>
         <button class="copy-btn" id="copyBtn" onclick="copyUrl()">Copy URL</button>
       </div>
     </div>
@@ -410,8 +410,8 @@
 
     <footer class="footer">
       <div class="footer-links">
-        <a href="https://github.com/YOUR_USERNAME/iptvidn-playlist" target="_blank">GitHub</a>
-        <a href="/playlist.m3u8">Raw Playlist</a>
+        <a href="https://github.com/tahsinulmohsin/iptvidn-playlist" target="_blank">GitHub</a>
+        <a href="/api/playlist">Raw Playlist</a>
         <a href="http://iptvidn.com" target="_blank">Source</a>
       </div>
       <p class="footer-disclaimer">
@@ -437,7 +437,7 @@
     // Fetch playlist and show stats
     async function loadStats() {
       try {
-        const res = await fetch('/playlist.m3u8');
+        const res = await fetch('/api/playlist');
         const text = await res.text();
         const lines = text.split('\n');
 
