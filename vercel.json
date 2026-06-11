@@ -1,39 +1,18 @@
 {
-  "buildCommand": "",
-  "outputDirectory": "public",
-  "functions": {
-    "api/playlist.js": {
-      "maxDuration": 60,
-      "memory": 1024
-    }
-  },
-  "headers": [
+  "version": 2,
+  "rewrites": [
     {
       "source": "/api/playlist",
-      "headers": [
-        { "key": "Content-Type", "value": "application/vnd.apple.mpegurl" },
-        { "key": "Access-Control-Allow-Origin", "value": "*" },
-        { "key": "Access-Control-Allow-Methods", "value": "GET, OPTIONS" },
-        { "key": "Access-Control-Allow-Headers", "value": "Content-Type" }
-      ]
-    },
+      "destination": "/playlist.m3u8"
+    }
+  ],
+  "headers": [
     {
       "source": "/playlist.m3u8",
       "headers": [
-        { "key": "Content-Type", "value": "application/vnd.apple.mpegurl" },
+        { "key": "Content-Type", "value": "application/vnd.apple.mpegurl; charset=utf-8" },
         { "key": "Access-Control-Allow-Origin", "value": "*" }
       ]
-    },
-    {
-      "source": "/(.*)",
-      "headers": [
-        { "key": "X-Frame-Options", "value": "DENY" },
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
-      ]
     }
-  ],
-  "rewrites": [
-    { "source": "/", "destination": "/index.html" }
   ]
 }

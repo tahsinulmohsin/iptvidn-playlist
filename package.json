@@ -4,7 +4,8 @@
   "description": "Auto-updated M3U8 playlist generator for iptvidn.com channels — powered by Vercel Serverless Functions",
   "main": "api/playlist.js",
   "scripts": {
-    "test": "node scraper/validate.js",
+    "start": "node worker.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vercel dev"
   },
   "keywords": [
@@ -17,6 +18,7 @@
   "author": "tahsinulmohsin",
   "license": "MIT",
   "dependencies": {
+    "express": "^5.2.1",
     "node-fetch": "^2.7.0"
   }
 }
