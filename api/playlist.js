@@ -56,22 +56,14 @@ module.exports = async function handler(req, res) {
       return res.status(502).json({ error: 'No channels found on iptvidn.com' });
     }
 
-    // ── Step 3: Resolve stream URLs for each channel ────────────────
-    // Batch fetch play.php for each channel to get tokens/embed URLs
-    const batchSize = 10;
-    const resolvedChannels = [];
-
-    for (let i = 0; i < channelEntries.length; i += batchSize) {
-      const batch = channelEntries.slice(i, i + batchSize);
-      const results = await Promise.allSettled(
-        batch.map((ch) => resolveStreamUrl(ch))
-      );
-      for (const r of results) {
-        if (r.status === 'fulfilled' && r.value) {
-          resolvedChannels.push(r.value);
-        }
-      }
-    }
+    // ── Step 3: Resolve stream URLs for ALL channels in parallel ────
+    // Each play.php request has a 5s timeout; all run concurrently
+    const results = await Promise.allSettled(
+      channelEntries.map((ch) => resolveStreamUrl(ch))
+    );
+    const resolvedChannels = results
+      .filter((r) => r.status === 'fulfilled' && r.value)
+      .map((r) => r.value);
 
     console.log(`✅ Resolved ${resolvedChannels.length}/${channelEntries.length} streams`);
 
@@ -148,7 +140,7 @@ function extractChannelsFromHtml(html) {
 async function resolveStreamUrl(channel) {
   try {
     const playUrl = `${IPTVIDN_BASE}/play.php?stream=${channel.streamName}`;
-    const res = await fetchWithTimeout(playUrl, { headers: HEADERS }, 10000);
+    const res = await fetchWithTimeout(playUrl, { headers: HEADERS }, 5000);
 
     if (!res.ok) return null;
 
