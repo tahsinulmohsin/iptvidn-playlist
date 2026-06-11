@@ -1,0 +1,104 @@
+name: 🏷️ Automated Release
+
+on:
+  schedule:
+    - cron: '0 0 * * 0'  # Weekly on Sunday at midnight UTC
+  workflow_dispatch:
+    inputs:
+      version_bump:
+        description: 'Version bump type'
+        required: true
+        default: 'patch'
+        type: choice
+        options:
+          - patch
+          - minor
+          - major
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Full history for tag detection
+
+      - name: 🔍 Get latest tag
+        id: get_tag
+        run: |
+          LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "v0.0.0")
+          echo "latest_tag=${LATEST_TAG}" >> $GITHUB_OUTPUT
+          echo "Latest tag: ${LATEST_TAG}"
+
+      - name: 🔢 Calculate next version
+        id: next_version
+        run: |
+          LATEST="${{ steps.get_tag.outputs.latest_tag }}"
+          # Remove 'v' prefix
+          VERSION=${LATEST#v}
+          IFS='.' read -r MAJOR MINOR PATCH <<< "$VERSION"
+
+          BUMP="${{ github.event.inputs.version_bump || 'patch' }}"
+
+          case $BUMP in
+            major)
+              MAJOR=$((MAJOR + 1))
+              MINOR=0
+              PATCH=0
+              ;;
+            minor)
+              MINOR=$((MINOR + 1))
+              PATCH=0
+              ;;
+            patch)
+              PATCH=$((PATCH + 1))
+              ;;
+          esac
+
+          NEXT_VERSION="v${MAJOR}.${MINOR}.${PATCH}"
+          echo "next_version=${NEXT_VERSION}" >> $GITHUB_OUTPUT
+          echo "Next version: ${NEXT_VERSION}"
+
+      - name: 📊 Generate release notes
+        id: release_notes
+        run: |
+          CHANNEL_COUNT=$(grep -c "#EXTINF" public/playlist.m3u8 2>/dev/null || echo "0")
+          LAST_UPDATE=$(grep "Last updated" public/playlist.m3u8 | head -1 | sed 's/# Last updated: //')
+
+          CATEGORIES=$(grep 'group-title=' public/playlist.m3u8 | \
+            sed 's/.*group-title="\([^"]*\)".*/\1/' | \
+            sort -u | tr '\n' ', ' | sed 's/,$//')
+
+          cat << EOF > release_notes.md
+          ## 📺 IPTVIDN Playlist Release ${{ steps.next_version.outputs.next_version }}
+
+          ### 📊 Stats
+          - **Total Channels:** ${CHANNEL_COUNT}
+          - **Last Updated:** ${LAST_UPDATE}
+          - **Categories:** ${CATEGORIES}
+
+          ### 📥 Quick Access
+          Download the \`playlist.m3u8\` file below or use the Vercel-hosted URL:
+          \`\`\`
+          https://your-project.vercel.app/playlist.m3u8
+          \`\`\`
+
+          ### 🔄 Auto-Updates
+          This playlist auto-updates every 20 minutes via GitHub Actions.
+          EOF
+
+      - name: 🏷️ Create release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.next_version.outputs.next_version }}
+          name: Release ${{ steps.next_version.outputs.next_version }}
+          body_path: release_notes.md
+          files: public/playlist.m3u8
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

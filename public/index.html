@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IPTVIDN Playlist — Auto-Updated M3U8</title>
+  <meta name="description" content="Auto-updated M3U8 playlist from iptvidn.com. Updated every 20 minutes via GitHub Actions.">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg-primary: #050508;
+      --bg-secondary: #0d0d14;
+      --bg-card: rgba(255, 255, 255, 0.03);
+      --bg-card-hover: rgba(255, 255, 255, 0.06);
+      --border-subtle: rgba(255, 255, 255, 0.06);
+      --border-glow: rgba(139, 92, 246, 0.3);
+      --text-primary: #f0f0f5;
+      --text-secondary: #8b8b9e;
+      --text-muted: #5a5a6e;
+      --accent-violet: #8b5cf6;
+      --accent-blue: #3b82f6;
+      --accent-emerald: #10b981;
+      --accent-rose: #f43f5e;
+      --gradient-main: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 50%, #06b6d4 100%);
+      --gradient-warm: linear-gradient(135deg, #f43f5e 0%, #8b5cf6 100%);
+      --shadow-glow: 0 0 40px rgba(139, 92, 246, 0.15);
+      --radius: 16px;
+      --radius-sm: 10px;
+      --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      min-height: 100vh;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Animated background */
+    .bg-grid {
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(139, 92, 246, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(139, 92, 246, 0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+      z-index: 0;
+    }
+
+    .bg-glow {
+      position: fixed;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      filter: blur(120px);
+      opacity: 0.12;
+      z-index: 0;
+      animation: float 20s ease-in-out infinite;
+    }
+
+    .bg-glow-1 { background: var(--accent-violet); top: -200px; right: -200px; }
+    .bg-glow-2 { background: var(--accent-blue); bottom: -200px; left: -200px; animation-delay: -10s; }
+    .bg-glow-3 { background: var(--accent-emerald); top: 50%; left: 50%; transform: translate(-50%, -50%); animation-delay: -5s; opacity: 0.06; }
+
+    @keyframes float {
+      0%, 100% { transform: translate(0, 0); }
+      33% { transform: translate(30px, -30px); }
+      66% { transform: translate(-20px, 20px); }
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 60px 24px 80px;
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 100px;
+      background: rgba(139, 92, 246, 0.1);
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--accent-violet);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    .badge .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent-emerald);
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.8); }
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 6vw, 3.5rem);
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+
+    h1 .gradient {
+      background: var(--gradient-main);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    /* URL Card */
+    .url-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      padding: 28px;
+      margin-bottom: 32px;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .url-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: var(--gradient-main);
+      opacity: 0.5;
+    }
+
+    .url-card:hover {
+      border-color: var(--border-glow);
+      box-shadow: var(--shadow-glow);
+    }
+
+    .url-label {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+
+    .url-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .url-display {
+      flex: 1;
+      padding: 14px 18px;
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+      font-size: 14px;
+      color: var(--accent-blue);
+      overflow-x: auto;
+      white-space: nowrap;
+      user-select: all;
+    }
+
+    .copy-btn {
+      padding: 14px 20px;
+      background: var(--gradient-main);
+      border: none;
+      border-radius: var(--radius-sm);
+      color: white;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      white-space: nowrap;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .copy-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 25px rgba(139, 92, 246, 0.3);
+    }
+
+    .copy-btn:active { transform: translateY(0); }
+
+    .copy-btn.copied {
+      background: var(--accent-emerald);
+    }
+
+    /* Stats */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+
+    .stat-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 20px 16px;
+      text-align: center;
+      transition: var(--transition);
+    }
+
+    .stat-card:hover {
+      border-color: var(--border-glow);
+      transform: translateY(-2px);
+    }
+
+    .stat-value {
+      font-size: 1.5rem;
+      font-weight: 800;
+      background: var(--gradient-main);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 4px;
+    }
+
+    .stat-label {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Features */
+    .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+
+    .feature {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 16px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      font-size: 14px;
+      color: var(--text-secondary);
+      transition: var(--transition);
+    }
+
+    .feature:hover {
+      color: var(--text-primary);
+      border-color: var(--border-glow);
+    }
+
+    .feature-icon {
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding-top: 40px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-bottom: 16px;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: var(--transition);
+    }
+
+    .footer-links a:hover { color: var(--accent-violet); }
+
+    .footer-disclaimer {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .container { padding: 40px 16px 60px; }
+      .url-container { flex-direction: column; }
+      .copy-btn { width: 100%; }
+      .stats { grid-template-columns: 1fr; }
+      .features { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-glow bg-glow-3"></div>
+
+  <div class="container">
+    <header class="header">
+      <div class="badge">
+        <span class="dot"></span>
+        Auto-updating every 20 min
+      </div>
+      <h1>
+        <span class="gradient">IPTVIDN</span><br>Playlist
+      </h1>
+      <p class="subtitle">
+        Auto-generated M3U8 playlist from iptvidn.com, hosted on Vercel with 20-minute refresh.
+      </p>
+    </header>
+
+    <div class="url-card">
+      <div class="url-label">📡 Playlist URL</div>
+      <div class="url-container">
+        <div class="url-display" id="playlistUrl">https://your-project.vercel.app/playlist.m3u8</div>
+        <button class="copy-btn" id="copyBtn" onclick="copyUrl()">Copy URL</button>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat-card">
+        <div class="stat-value" id="channelCount">—</div>
+        <div class="stat-label">Channels</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">20m</div>
+        <div class="stat-label">Refresh</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="lastUpdate">—</div>
+        <div class="stat-label">Updated</div>
+      </div>
+    </div>
+
+    <div class="features">
+      <div class="feature">
+        <span class="feature-icon">🔄</span>
+        Auto-updates
+      </div>
+      <div class="feature">
+        <span class="feature-icon">🌐</span>
+        Global CDN
+      </div>
+      <div class="feature">
+        <span class="feature-icon">📋</span>
+        M3U8 Format
+      </div>
+      <div class="feature">
+        <span class="feature-icon">🛡️</span>
+        CORS Enabled
+      </div>
+      <div class="feature">
+        <span class="feature-icon">🏷️</span>
+        Categorized
+      </div>
+      <div class="feature">
+        <span class="feature-icon">⚡</span>
+        Fast Delivery
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="https://github.com/YOUR_USERNAME/iptvidn-playlist" target="_blank">GitHub</a>
+        <a href="/playlist.m3u8">Raw Playlist</a>
+        <a href="http://iptvidn.com" target="_blank">Source</a>
+      </div>
+      <p class="footer-disclaimer">
+        For educational and personal use only. All streams are sourced from publicly accessible URLs on iptvidn.com. Content is owned by respective broadcasters.
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    function copyUrl() {
+      const url = document.getElementById('playlistUrl').textContent;
+      navigator.clipboard.writeText(url).then(() => {
+        const btn = document.getElementById('copyBtn');
+        btn.textContent = '✓ Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.textContent = 'Copy URL';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+
+    // Fetch playlist and show stats
+    async function loadStats() {
+      try {
+        const res = await fetch('/playlist.m3u8');
+        const text = await res.text();
+        const lines = text.split('\n');
+
+        const channelCount = lines.filter(l => l.startsWith('#EXTINF:')).length;
+        document.getElementById('channelCount').textContent = channelCount || '—';
+
+        const updateLine = lines.find(l => l.includes('Last updated:'));
+        if (updateLine) {
+          const dateStr = updateLine.replace('# Last updated: ', '').trim();
+          const date = new Date(dateStr);
+          const now = new Date();
+          const diffMs = now - date;
+          const diffMin = Math.floor(diffMs / 60000);
+
+          if (diffMin < 60) {
+            document.getElementById('lastUpdate').textContent = diffMin + 'm ago';
+          } else if (diffMin < 1440) {
+            document.getElementById('lastUpdate').textContent = Math.floor(diffMin / 60) + 'h ago';
+          } else {
+            document.getElementById('lastUpdate').textContent = Math.floor(diffMin / 1440) + 'd ago';
+          }
+        }
+      } catch (e) {
+        console.log('Could not load stats:', e);
+      }
+    }
+
+    loadStats();
+  </script>
+</body>
+</html>

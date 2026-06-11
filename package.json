@@ -1,0 +1,16 @@
+{
+  "name": "iptvidn-playlist",
+  "version": "1.0.0",
+  "description": "Auto-updated M3U8 playlist generator for iptvidn.com channels",
+  "main": "scraper/index.js",
+  "scripts": {
+    "scrape": "node scraper/index.js",
+    "test": "node scraper/validate.js"
+  },
+  "keywords": ["iptv", "m3u8", "playlist", "iptvidn"],
+  "author": "Tahsin",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^23.0.0"
+  }
+}
