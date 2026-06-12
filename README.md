@@ -25,27 +25,54 @@ https://iptvidn-playlist.vercel.app/api/playlist
 ## ✨ Features
 
 - 🔄 **Auto-Updates Every 20 Minutes** — Vercel CDN cache auto-refreshes, no cron needed
-- ⚡ **Serverless Powered** — Scrapes on-demand using headless Chrome on Vercel Functions
-- 🌐 **Global CDN** — Fast delivery worldwide via Vercel Edge Network
-- 📋 **Valid M3U8 Format** — Compatible with all major IPTV players
-- 🏷️ **Categorized Channels** — Organized by group (Sports, News, Bangla, Hindi, etc.)
-- 📦 **Automated Releases** — Weekly GitHub releases with playlist snapshots
-- 🛡️ **CORS Enabled** — Works with web-based players too
+- ⚡ **Serverless## 🚀 How it works (The Architecture)
 
----
+Because `iptvidn.com` heavily blocks cloud and datacenter IP addresses (AWS, Cloudflare, Vercel), it is impossible for Vercel's Edge CDN to scrape the streams directly on request.
 
-## 🚀 Quick Start
+To solve this, we use a **Triggered Cloud Worker** architecture:
+1. A lightweight Node.js web server runs on **Render** (which has a great free tier with NO credit card required).
+2. We use a free cron service (**cron-job.org**) to ping the Render server's `/trigger` endpoint every 20 minutes.
+3. Upon receiving the ping, the worker uses `scraper/generate_static.js` to parse `iptvidn.com` and generate `playlist.m3u8`.
+4. The worker automatically commits and pushes the updated playlist to this GitHub repository.
+5. Vercel (which is linked to your GitHub repo) instantly detects the push and deploys the new static `playlist.m3u8` to its global, high-speed CDN.
 
-### Option 1: Direct URL (Recommended)
-Copy the playlist URL and paste it into your IPTV player:
+Your media players (like VLC) will hit the fast Vercel URL!
+
+## ☁️ How to deploy the Automation Worker (100% Free, No Credit Card)
+
+We will use **Render** to host the worker and **cron-job.org** to trigger it every 20 minutes.
+
+### Step 1: Deploy to Render
+1. Go to [Render.com](https://render.com) and sign up (No credit card required).
+2. Click **New +** and select **Web Service**.
+3. Connect your GitHub account and select your `iptvidn-playlist` repository.
+4. Render will automatically detect the `Dockerfile` and Node.js environment.
+5. Scroll down to **Environment Variables** and add:
+   - Key: `GITHUB_TOKEN`
+   - Value: *(Create a Personal Access Token in GitHub Settings -> Developer Settings -> Personal access tokens (classic) with the `repo` scope, and paste it here)*
+6. Click **Create Web Service**. 
+7. Once deployed, copy your Render app URL (e.g., `https://iptvidn-playlist.onrender.com`).
+
+### Step 2: Set up the 20-Minute Automation Trigger
+Because Render's free tier goes to sleep after 15 minutes of inactivity, we will use a free cron service to wake it up and trigger the update every 20 minutes.
+1. Go to [cron-job.org](https://cron-job.org) and create a free account.
+2. Click **CREATE CRONJOB**.
+3. In the URL field, paste your Render app URL and add `/trigger` to the end (e.g., `https://iptvidn-playlist.onrender.com/trigger`).
+4. Set the execution schedule to **Every 20 minutes**.
+5. Click **Create**.
+
+That's it! Every 20 minutes, cron-job.org will hit your Render app. Render will wake up, scrape the new tokens, push the updated playlist to GitHub, and Vercel will instantly host it!
+
+## 🔗 The Output URL
+
+Once everything is running, you can put this URL into VLC or any IPTV Player:
 ```
-https://iptvidn-playlist.vercel.app/api/playlist
+https://iptvidn-playlist.vercel.app/playlist.m3u8
 ```
 
 ### Option 2: Download
 Download the latest `playlist.m3u8` from the [Releases](../../releases/latest) page.
 
-### Option 3: Static Fallback
 ```
 https://iptvidn-playlist.vercel.app/playlist.m3u8
 ```
