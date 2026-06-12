@@ -1,257 +1,509 @@
 #EXTM3U
 # IPTVIDN Playlist — Auto-generated
-# Last updated: 2026-06-11T20:25:44.441Z
+# Last updated: 2026-06-12T06:59:48.159Z
 # Total channels: 126
 
 #EXTINF:-1 tvg-name="JALSHA MOVIES" tvg-logo="http://iptvidn.com/assets/images/jalshamovies.jpg" group-title="Bangla",JALSHA MOVIES
-http://103.89.248.30:8082/JALSHA-MOVIES/mpegts?token=48965486d5544fb546ad76fd0302b41affd1d67a-8e6f16e51e972d1e29898ee7f5ad8a49-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/JALSHA-MOVIES/mpegts?token=401df8e9dd4ac449e0bbebfba65b56daee8d05fc-994ae2f90bd9e261cc820aa05daa232b-1781258140-1781247340&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Madani Channel Bangla" tvg-logo="http://iptvidn.com/assets/images/madanichannel.jpg" group-title="Bangla",Madani Channel Bangla
-http://103.89.248.30:8082/madani-channel-bangla/mpegts?token=e5bea2fc7c586cbda05288311bc160eb9207efbc-c0687e648da954ba5910c7444868ca20-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/madani-channel-bangla/mpegts?token=4db68657db00f0f4f8c53691807ed8bfb284b1cd-8403658f362fb39df80cc1431bb79d80-1781258141-1781247341&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="RUPOSHI BANGLA" tvg-logo="http://iptvidn.com/assets/images/Rupasi bangla.jpeg" group-title="Bangla",RUPOSHI BANGLA
-http://103.89.248.30:8082/RUPOSHI-BANGLA/mpegts?token=d0bf15507f73eefcdf1c9c0789e4357a2c1618c2-b88cc32f5d6ac1a590189a11cd862ae1-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/RUPOSHI-BANGLA/mpegts?token=0f366004032b73b010ca4a60ce6ec922430b27e7-489736ac8d4a5359ad8a44e746791449-1781258141-1781247341&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Sony Aath" tvg-logo="http://iptvidn.com/assets/images/sonyaath.jpg" group-title="Bangla",Sony Aath
-http://103.89.248.30:8082/Sony-Aath/mpegts?token=a1bb93a9d0ec0c5c16344b5e8264f15f68ae1077-a051468bb3266a741bd2be46934d3f90-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/Sony-Aath/mpegts?token=42feed0575c2626e1e699493b90bfc9967b0d5c5-878a0c5ce73e2c991cb41b13446f9d27-1781258141-1781247341&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Star_jalsha" tvg-logo="http://iptvidn.com/assets/images/starjalsha.jpg" group-title="Bangla",Star_jalsha
-http://103.89.248.30:8082/Star_jalsha/mpegts?token=a640a4a6b377e6739fa3430a58bc7e9ff1e51ebf-d6c4cd7fdbcace1276b0174caeb2274f-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/Star_jalsha/mpegts?token=e97bf13a67d93504cb879d30601b57f74f11cb02-e3ea646a34395b29548ac349eab757cb-1781258140-1781247340&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="ZEE 24 GHANTA" tvg-logo="http://iptvidn.com/assets/images/zee 24.jpeg" group-title="Bangla",ZEE 24 GHANTA
-http://103.89.248.30:8082/ZEE-24-GHANTA/mpegts?token=f15fb90c7d0b91bbf4625ac502ea41070f78956b-c78627452cb065b6eb24460cf8d7b557-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/ZEE-24-GHANTA/mpegts?token=7e3b88e9ab57bf9825159ad8307cd5669dc4ca12-99dc490dd37da990ae9c80f440e1879d-1781258141-1781247341&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Zee Bangla" tvg-logo="http://iptvidn.com/assets/images/zeebanglahd.jpg" group-title="Bangla",Zee Bangla
-http://103.89.248.30:8082/zee-bangla/mpegts?token=405e950202b82a6a08201b9b6b361abdb58e87dc-20de846522ff6157e873fb39babf519a-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/zee-bangla/mpegts?token=435b52660a771b2dab25778fbfac345e13a84c38-7327dd693d66eefb171d2bc93dc46a16-1781258140-1781247340&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Animalplanent" tvg-logo="http://iptvidn.com/assets/images/animalplanetnew.jpg" group-title="Documentary",Animalplanent
-http://103.89.248.30:8082/animalplanent/mpegts?token=5d582938b429d2c6248ec896d16c1c87e1720d31-d40a81bfc76e212e9721bd9aca40126c-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/animalplanent/mpegts?token=81ee038af7abe66963ecced6ef662b659667217f-e201f3da9905191c7d03ed81e0f0f101-1781258148-1781247348&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="DISCOVERY BANGLA" tvg-logo="http://iptvidn.com/assets/images/discoverybangla.jpg" group-title="Documentary",DISCOVERY BANGLA
-http://103.89.248.30:8082/DISCOVERY-BANGLA/mpegts?token=25d8e257a0bece92d825b25df25aea459898dc70-b7c6d1b96bde008c0b165d28f6785b77-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/DISCOVERY-BANGLA/mpegts?token=6a3bccba65a1e7fe7e34b636274c48dc908bf4c0-ece91d9d10bae6caada5fc583829d4f0-1781258151-1781247351&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="DISCOVERY HD" tvg-logo="http://iptvidn.com/assets/images/discoveryhd.jpg" group-title="Documentary",DISCOVERY HD
-http://103.89.248.30:8082/DISCOVERY-HD/mpegts?token=5e8ac9fff3fc477ef2f29e09e5556bd69d998dd2-521a82fa60b1248134ee92d821b3ec1e-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/DISCOVERY-HD/mpegts?token=c9b11ee7a76dcd9dc150afd251bf2550d392c2f6-6256093fc2c5e57c41999fef3f17a9f1-1781258149-1781247349&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Discovery Science" tvg-logo="http://iptvidn.com/assets/images/discoveryscience.jpg" group-title="Documentary",Discovery Science
-http://103.89.248.30:8082/Discovery-Science/mpegts?token=0160a3b6c8ed08ad0461afaa1cf1c1a1823c9483-aa1fa6155982a3b0989fa04c0c65ac8e-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/Discovery-Science/mpegts?token=fcded060ac2403b2e3d2413d6deb1155814f49d4-c4b460b29854787ddb998ca4f29a0001-1781258150-1781247350&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Discovery Turbo" tvg-logo="http://iptvidn.com/assets/images/discovery turbo.jpg" group-title="Documentary",Discovery Turbo
-http://103.89.248.30:8082/Discovery-Turbo/mpegts?token=ca70704a13b93713c3d420e1727ef545f9dc1971-7119fbb0e000f0b0f0f1e38d375b4046-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/Discovery-Turbo/mpegts?token=79c2c70977eff2770fe161ca661aa600a6ed6b2d-2d61122800048d3d72218f346f6cfa99-1781258150-1781247350&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="DMAX" tvg-logo="http://iptvidn.com/assets/images/dmax.jpg" group-title="Documentary",DMAX
-http://103.89.248.30:8082/DMAX/mpegts?token=25c8809b998a7a695a431becea72570790dee41c-82c6971808a167e9b1aef831af3af17b-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/DMAX/mpegts?token=e36500d2c427c10dd56522ea58e19a9ab5051e40-524555afd1c84d9b6d77bf5b220d0019-1781258149-1781247349&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Investigation Discovery" tvg-logo="http://iptvidn.com/assets/images/investigation discovery.jpg" group-title="Documentary",Investigation Discovery
-http://103.89.248.30:8082/Investigation-Discovery/mpegts?token=cbdf00f943c2eea349dedc8dd853edcbd0a2bb2c-ac3b3fda219c315db0e2250a25dc2f7f-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/Investigation-Discovery/mpegts?token=cffafb3e10e839a39e70a0e99382c81c4aa4abad-a7643b2390a10eb0fee6eaeefe3a6842-1781258150-1781247350&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="LOVE NATURE" tvg-logo="http://iptvidn.com/assets/images/love nature.jpg" group-title="Documentary",LOVE NATURE
-http://103.89.248.30:8082/LOVE-NATURE/mpegts?token=798840610e478d7491f69f7ad7e0752a63970ce5-2b1a3f0365d780f82c9b0c4e14dd7eed-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/LOVE-NATURE/mpegts?token=11e827f6fab4d97b72da666fe1b4f96dd61957db-7d4c1a9f4bc12c84988f2cf4134da737-1781258150-1781247350&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Nat Geo Wild" tvg-logo="http://iptvidn.com/assets/images/natgeowildhd.jpg" group-title="Documentary",Nat Geo Wild
-http://103.89.248.30:8082/nat-geo-wild/mpegts?token=f3db1ef821b6a2a913fff6c485ce618cdd371e31-d0e214318323b44e727b493ec8af80c1-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/nat-geo-wild/mpegts?token=86003c6025bcf4c95dd5a9c0778775400d5c816c-9fd890a261045ab6abd81025bcd6392b-1781258148-1781247348&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="National Geo Graphy Bangla" tvg-logo="http://iptvidn.com/assets/images/nationalgeo.jpg" group-title="Documentary",National Geo Graphy Bangla
-http://103.89.248.30:8082/National-geo-graphy-bangla/mpegts?token=6768cb50815509c8951c12b319688e51c5bae877-8ed30ef2a42769a0607a76735533bd0c-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/National-geo-graphy-bangla/mpegts?token=62606284505adaaf2a2f647e721ed5d3892c3253-89d71699265052dc5872052df41634fa-1781258148-1781247348&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="REDBOL TV" tvg-logo="http://iptvidn.com/assets/images/red bull.jpg" group-title="Documentary",REDBOL TV
-http://103.89.248.30:8082/REDBOL-TV/mpegts?token=3c38f6e8c8fadfeb703650f274049310834e0064-6d7ee9a9f967a825dbcea231b7c91d8f-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/REDBOL-TV/mpegts?token=be8bd3b98d7167548e16f563ac1bbded884ebda0-70319616129759b2708ffa76231c9e93-1781258149-1781247349&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Tlc Hd" tvg-logo="http://iptvidn.com/assets/images/tlchd.jpg" group-title="Documentary",Tlc Hd
-http://103.89.248.30:8082/tlc-hd/mpegts?token=796952747b74527d1623c348e03d9c04605a1ac1-50680745059317986ac4bc9d5595bf23-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/tlc-hd/mpegts?token=cdc04746b1aa725c4a57cb797e5a27e008f32fd5-e5fb799829d3108cb1b0e8c30659d479-1781258149-1781247349&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Travel Xp" tvg-logo="http://iptvidn.com/assets/images/travelxphd.jpg" group-title="Documentary",Travel Xp
-http://103.89.248.30:8082/travel-xp/mpegts?token=8201fa533ece4b78e8ea92c01eb793857524975f-7b18893f8451bd1a37eb5a1d48c48d01-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/travel-xp/mpegts?token=226cdfab66631fb3a492088f5ecc1eb2584e823c-18a53b687119a27465ac4e3f718fccc0-1781258149-1781247349&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Wild Earth" tvg-logo="http://iptvidn.com/assets/images/wild earth.jpg" group-title="Documentary",Wild Earth
-http://103.89.248.30:8082/Wild-Earth/mpegts?token=62b6357292147c620051de69d778f4552fe8199e-0e74cf897092b7e5e558385e1e571317-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/Wild-Earth/mpegts?token=2afc348542adf25941f4b96269f33be3b5954ac5-8275b9d995783c29e825a236168faa51-1781258150-1781247350&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Colors HD" tvg-logo="http://iptvidn.com/assets/images/colorshd.jpg" group-title="Hindi",Colors HD
-http://103.89.248.30:8082/Colors-HD/mpegts?token=e3a904eccbed7631b6aed8ab0d89a33020b3de53-a9e8f5a40be4d74cb88770dfdc649379-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/Colors-HD/mpegts?token=8fead1a588493ca2b146fa423e97785770dfa01b-7c2ef8d344eaddaa2508e814e65c9d04-1781258147-1781247347&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Hum Masala" tvg-logo="http://iptvidn.com/assets/images/hum masala.jpg" group-title="Hindi",Hum Masala
-http://103.89.248.30:8082/Hum-masala/mpegts?token=9df989540f8531b75f2925a2a1935bfee6b3c20b-941a563f532f9b5b0051eaa92f89332f-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/Hum-masala/mpegts?token=da717f7edb732edaf17a812ed354ca509a198862-9843a4d112649e3851516bf71afcccd6-1781258145-1781247345&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Hum Sitarey" tvg-logo="http://iptvidn.com/assets/images/hum sitarey.jpg" group-title="Hindi",Hum Sitarey
-http://103.89.248.30:8082/Hum-Sitarey/mpegts?token=053d476415b2a2d1558fea82baf70f580333ab56-3b4bd9981a5d6001c18868d4bf360dd4-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/Hum-Sitarey/mpegts?token=1a4c4a20216ba69bea2dc07dc23f6c2b65d3db1e-1be4077e12f2ddaf1eb171d62bb65f02-1781258146-1781247346&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="HUM TV" tvg-logo="http://iptvidn.com/assets/images/humtvhd.jpg" group-title="Hindi",HUM TV
-http://103.89.248.30:8082/HUM-TV/mpegts?token=fa235f52e8a77665260c76b7c526cb7794eb5e12-023d3c676757e73d87c34f81bd800621-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/HUM-TV/mpegts?token=8e4224a1752c091f4a0d7a02bcfc83f408995abb-7c9ff3022cc23e832d7d305951b4a13d-1781258145-1781247345&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="SONY KAL" tvg-logo="http://iptvidn.com/assets/images/sony kal.jpeg" group-title="Hindi",SONY KAL
-http://103.89.248.30:8082/SONY-KAL/mpegts?token=2842ecafee1e10e8b6864e3f175b1ed51bd19c22-6562f173e647e1f8e93205a82fadfbe6-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/SONY-KAL/mpegts?token=bd2f7349b2d8c89d856d463b4716e94d38a9836f-04c2b9ce6106bfa4f124f1da92b8e58c-1781258147-1781247347&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="SONY SAB" tvg-logo="http://iptvidn.com/assets/images/sonysabhd.jpg" group-title="Hindi",SONY SAB
-http://103.89.248.30:8082/SONY-SAB/mpegts?token=865aaff48da5147ed67240a4f3f973c56177bf1e-746648f12ea3f1423ba1bccbd27e1ff8-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/SONY-SAB/mpegts?token=78d20ef052d4646958e2ed35464b5182ff472088-66e96a2ffb73e4de5341322c40b617b3-1781258146-1781247346&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="SONY TV" tvg-logo="http://iptvidn.com/assets/images/sonytv.jpg" group-title="Hindi",SONY TV
-http://103.89.248.30:8082/SONY-TV/mpegts?token=ae5915ab4a49010cf634e62a4a1b6c02e7a4ecb0-43e8a0be2640ca8d905ba0f3fdd5a9d9-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/SONY-TV/mpegts?token=d31015f544358b4f25963ec96fbd5f446e1714f1-76dfb0a33ebc1934f2091665e5315f9e-1781258145-1781247345&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Sony WAH" tvg-logo="http://iptvidn.com/assets/images/sony wah.jpeg" group-title="Hindi",Sony WAH
-http://103.89.248.30:8082/sony-WAH/mpegts?token=7c2452a4471770e77760e332b1596f456b06c5c4-ff2cf2b8b8d5b99dfc4a46cb6f2b1a7c-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/sony-WAH/mpegts?token=885dcc3bd8e57cd14da1091c3ff50ba72436301b-12bac92968a57c656d3c113a160169ee-1781258146-1781247346&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="STAR BHARAT" tvg-logo="http://iptvidn.com/assets/images/starbharat.jpg" group-title="Hindi",STAR BHARAT
-http://103.89.248.30:8082/STAR-BHARAT/mpegts?token=caba91c2adc87c5444223201f7350ad591d92327-77f9d7597ee523f3be043c79e8308a23-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/STAR-BHARAT/mpegts?token=4536b678898c4a036b85a311c42907d01c7c9902-32b53836fcef584ccbd0d0388fd77611-1781258145-1781247345&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="STAR PLUS" tvg-logo="http://iptvidn.com/assets/images/starplushd.jpg" group-title="Hindi",STAR PLUS
-http://103.89.248.30:8082/STAR-PLUS/mpegts?token=570fc1ae21214fdb7fe1de8101a8e9c598f1d813-a22cf48fccfb5edc715f811096f7d79f-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/STAR-PLUS/mpegts?token=531823ccf72fb83d00c118a8eeac3ffbed89715b-722b3da12947c0455acf8c262528e479-1781258144-1781247344&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Cn" tvg-logo="http://iptvidn.com/assets/images/cartoonnetwork.jpg" group-title="Kids",Cn
-http://103.89.248.30:8082/cn/mpegts?token=81a4532a271659dd2679917bbfc956214effa71b-17b4c55a9e5dcfefbc4cc6fe8e595298-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/cn/mpegts?token=a0d7f5d40be9d91ebffe060aed110720bfe69260-ea875f7db667a02695487bc548d279cc-1781258151-1781247351&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="DISCOVERY KIDS" tvg-logo="http://iptvidn.com/assets/images/discoverykids.jpg" group-title="Kids",DISCOVERY KIDS
-http://103.89.248.30:8082/DISCOVERY-KIDS/mpegts?token=bdd4bb5c89a2e1bbab7c7f18150406965e161466-f6e2fc275539b3666443432b9e662541-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/DISCOVERY-KIDS/mpegts?token=c0267be718c47d1a95d58ccf46bb3798000fc484-d3812b6f594931a0ce55377303a10c88-1781258151-1781247351&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="DISNEY HINDI" tvg-logo="http://iptvidn.com/assets/images/disneychannel.jpg" group-title="Kids",DISNEY HINDI
-http://103.89.248.30:8082/DISNEY-HINDI/mpegts?token=938ffa2fc811658831cfeb0ac891f587bd24ddc3-8e20d0bf8737a31d15c6383a4ffe02a4-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/DISNEY-HINDI/mpegts?token=c8ad6bab5aa71928f6ccb1a4cc87d45fc54ab8ba-b09f599dbd18ee0e20e8dddc4336ef14-1781258151-1781247351&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="POGO" tvg-logo="http://iptvidn.com/assets/images/pogo.jpg" group-title="Kids",POGO
-http://103.89.248.30:8082/POGO/mpegts?token=968f5493c7aa7e5cffeebaa9d3c01c7f1ba52f0e-eff921a5b4cb4e8f35112cd45043bfa8-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/POGO/mpegts?token=22efae059cb1c08e24683cb81ee80274828eb250-06705627d4a01e779914c6ec27d4a23e-1781258151-1781247351&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="SONY YAY" tvg-logo="http://iptvidn.com/assets/images/sonyyay.jpg" group-title="Kids",SONY YAY
-http://103.89.248.30:8082/SONY-YAY/mpegts?token=050c1b8edddc6b934e50169df392550a6b2f001f-45c9555bd5c73f1f8a0e865f33bec004-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/SONY-YAY/mpegts?token=df49dcda125bf1f3f643b09d6e98d7da4c7302e6-dd8d182e7fe4a5daf5561361a4188a7a-1781258147-1781247347&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="1LIVE" tvg-logo="http://iptvidn.com/assets/images/FIFA-2026.jpg" group-title="Live Sports",1LIVE
-http://103.89.248.30:8082/1LIVE/mpegts?token=6e9b48076c33dcbff296da0d5142ed354d7c6e06-8f5e7d5eb2d35dd5ba4a35c299fc48d2-1781220107-1781209307&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/1LIVE/mpegts?token=947e0813b95633ba3cf0f03ec871a5379ca3d19a-60c1c3892f82b7dce8b0f33b8ff72402-1781258127-1781247327&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="2LIVE" tvg-logo="http://iptvidn.com/assets/images/Live2.jpeg" group-title="Live Sports",2LIVE
-http://103.89.248.30:8082/2LIVE/mpegts?token=bc9f267c9c1ce4bd0d50d6b17c619e7772616268-0123ff731e4e1377af5bdba1ee55f315-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/2LIVE/mpegts?token=bc3436439c207346d6fe3f40bf57b5ae59c636ab-09aeba6df77abfc52ad92d258ea5abb3-1781258129-1781247329&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="FIFA World Cup Live" tvg-logo="http://iptvidn.com/assets/images/FIFA-2026.jpg" group-title="Live Sports",FIFA World Cup Live
-http://103.89.248.30:8082/FIFA-World-Cup-Live/mpegts?token=b4d673fdd404e9b86fa446fe14701d6d905ca12d-7165478c679aaf2fd3cc0b6e5dbd4d2e-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/FIFA-World-Cup-Live/mpegts?token=f0fb221beece1eca87e1eeaa48c69041108e13bf-c47aef6725767d0e19a2444966902b05-1781258127-1781247327&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="FIFA World Cup Live 1" tvg-logo="http://iptvidn.com/assets/images/FIFA-2026.jpg" group-title="Live Sports",FIFA World Cup Live 1
-http://103.89.248.30:8082/FIFA-World-Cup-Live-1/mpegts?token=b96c451043f463c9c561a9ae37f90231ac451814-40f3ecb7610cc0e673d693385eaa1466-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/FIFA-World-Cup-Live-1/mpegts?token=be7e45681a341968170ed00a0af581e83629ee5f-43657f228647ead42a62fbada4518dab-1781258127-1781247327&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="FIFA World Cup Live 2" tvg-logo="http://iptvidn.com/assets/images/FIFA-2026.jpg" group-title="Live Sports",FIFA World Cup Live 2
-http://103.89.248.30:8082/FIFA-World-Cup-Live-2/mpegts?token=ed0a5a816fa9bde266e394e2738765f2c24bc0c5-dfc1df953d591d9a7becbbeb061eefa3-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/FIFA-World-Cup-Live-2/mpegts?token=1fba5b71e1c82661f0f790c98cee9754149a07de-0d5dc75a79014298373cad90f211d655-1781258127-1781247327&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="FIFA World Cup Live 3" tvg-logo="http://iptvidn.com/assets/images/FIFA-2026.jpg" group-title="Live Sports",FIFA World Cup Live 3
-http://103.89.248.30:8082/FIFA-World-Cup-Live-3/mpegts?token=d12489d87c3c2cc3ee62522d442357b228cc2b8a-d4b6dd49b7e1b433fec4a04b98d16a27-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/FIFA-World-Cup-Live-3/mpegts?token=a8f5cdaa4b09609579e1cb0cb71329e534125827-b99630aea5697feb6dcadf8337c8e8a0-1781258127-1781247327&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="FIFA World Cup Live 4" tvg-logo="http://iptvidn.com/assets/images/FIFA-2026.jpg" group-title="Live Sports",FIFA World Cup Live 4
-http://103.89.248.30:8082/FIFA-World-Cup-Live-4/mpegts?token=5e157e9d4c52160ce186d728d87bce690b9312f4-2d7124793c421701448309a245c4d7b8-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/FIFA-World-Cup-Live-4/mpegts?token=9f2c89ee93c6bc74b731855537b09bef60f4d2a3-e93189ace0fad478bc75dbed6efb6986-1781258128-1781247328&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="FIFA World Cup Live 5" tvg-logo="http://iptvidn.com/assets/images/FIFA-2026.jpg" group-title="Live Sports",FIFA World Cup Live 5
-http://103.89.248.30:8082/FIFA-World-Cup-Live-5/mpegts?token=2c8f385827c9d81d3eae24569a4718dda468feab-c886d9a3b6c0149125ce343ab85c3190-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/FIFA-World-Cup-Live-5/mpegts?token=b2f94356056c2e9582b34fbc36730a4e02c05781-1d0aa636adf25af0a5e19553cf417e33-1781258128-1781247328&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="FIFA World Cup Live 6" tvg-logo="http://iptvidn.com/assets/images/FIFA-2026.jpg" group-title="Live Sports",FIFA World Cup Live 6
-http://103.89.248.30:8082/FIFA-World-Cup-Live-6/mpegts?token=a7aa8b6d0fdfc0e431bbf8ff13368eb8daea1e56-2c00b701e1e96e19c5cdecf0152204b7-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/FIFA-World-Cup-Live-6/mpegts?token=e71ea59bb3b95d6694d33f4b00927dcbd68db00d-ff2eefe301ce492e688cbf4341daed5d-1781258128-1781247328&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="FIFA World Cup Live 7" tvg-logo="http://iptvidn.com/assets/images/FIFA-2026.jpg" group-title="Live Sports",FIFA World Cup Live 7
-http://103.89.248.30:8082/FIFA-World-Cup-Live-7/mpegts?token=6bbcf237842c8e4e0f65fd530f05a3feae440bca-3551d17c57a7ab9c699210b1eb7dfb4d-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/FIFA-World-Cup-Live-7/mpegts?token=05c203ca5c7f9e445e5c096ebd27fb3965ad0e17-68851af66c3f7fbc29127d39da3630a4-1781258128-1781247328&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="FIFA World Cup Live 8" tvg-logo="http://iptvidn.com/assets/images/FIFA-2026.jpg" group-title="Live Sports",FIFA World Cup Live 8
-http://103.89.248.30:8082/FIFA-World-Cup-Live-8/mpegts?token=a9be51c46498abe0e27f92cd53a0a047e3be07b6-64c1acacf76914a1f968bb2efa727a7f-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/FIFA-World-Cup-Live-8/mpegts?token=d69be98af6292cbbe6e346870e94929526be87c1-99cb002e4558a0b5e1d1bf9a0e82b8f4-1781258128-1781247328&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="FIFA World Cup Live 9" tvg-logo="http://iptvidn.com/assets/images/FIFA-2026.jpg" group-title="Live Sports",FIFA World Cup Live 9
-http://103.89.248.30:8082/FIFA-World-Cup-Live-9/mpegts?token=8cf6729d41607402f79b876ee392a3e7f7d09f95-da9bcad4c1cab267273706f1208f29d1-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/FIFA-World-Cup-Live-9/mpegts?token=d27c49840d5710ad1803331115d1416d585fe6bc-4beef787a8e111469d4e88cfc686fc0a-1781258129-1781247329&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="LIVE CRICKET" tvg-logo="http://iptvidn.com/assets/images/LIVE-CRICKET.jpg" group-title="Live Sports",LIVE CRICKET
-http://103.89.248.30:8082/LIVE-CRICKET/mpegts?token=52061ada1b9f4bf89e97b3ec3583909f23588956-729e4368345e9cb1f03dd5dc7b6b31f8-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/LIVE-CRICKET/mpegts?token=817c6f014656f3e9b18655974f4630b1e9dc43c4-13151e8785014e95c4cc75870515ef16-1781258129-1781247329&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="LIVE CRICKET 1" tvg-logo="http://iptvidn.com/assets/images/LIVE-CRICKET.jpg" group-title="Live Sports",LIVE CRICKET 1
-http://103.89.248.30:8082/LIVE-CRICKET-1/mpegts?token=0ad5663cfc9bc87760ed1678dbe59020873dc0ee-d1e91b54906b97ccd064fb30e8f73754-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/LIVE-CRICKET-1/mpegts?token=44f8193c6791b2c991e3ac590d84223e061e50fb-6fd3a7ba3a0bbc85181bae69a951215d-1781258129-1781247329&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="LIVE FOOTBALL" tvg-logo="http://iptvidn.com/assets/images/LIVE-FOOTBALL.jpg" group-title="Live Sports",LIVE FOOTBALL
-http://103.89.248.30:8082/LIVE-FOOTBALL/mpegts?token=ad19cc59c07a6a995bdc9258068bc954de6e8728-825764d1e25d87349cff4e556bbd76d5-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/LIVE-FOOTBALL/mpegts?token=559bcc6c589f061ae9927805cbeb8f600daa3f18-97bb5c0e383dd2c831a2e0847e19275e-1781258129-1781247329&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="LIVE FOOTBALL 1" tvg-logo="http://iptvidn.com/assets/images/LIVE-FOOTBALL.jpg" group-title="Live Sports",LIVE FOOTBALL 1
-http://103.89.248.30:8082/LIVE-FOOTBALL-1/mpegts?token=a9a842b6dd436c5da6310ef0688b1b0bef37145c-d78dfd07946f1b68325af2a0237d372b-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/LIVE-FOOTBALL-1/mpegts?token=11319fbc3d44a138d4feccc7bade82a8a82ecb9d-77336727a200d64c04fd5666b5e5fa54-1781258130-1781247330&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="LIVE FOOTBALL 2" tvg-logo="http://iptvidn.com/assets/images/LIVE-FOOTBALL.jpg" group-title="Live Sports",LIVE FOOTBALL 2
-http://103.89.248.30:8082/LIVE-FOOTBALL-2/mpegts?token=38cc53612be02f571ec0600936e652bb4b4aee7c-1b846d35f1c4dfbc57b32d5437b6e277-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/LIVE-FOOTBALL-2/mpegts?token=ba4ed618526abd083768fc93a4d53b102018d760-282f58d2097e6504f6cfea51965cf955-1781258130-1781247330&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="AND FLIX" tvg-logo="http://iptvidn.com/assets/images/andflixhd.jpg" group-title="Movies",AND FLIX
-http://103.89.248.30:8082/AND-FLIX/mpegts?token=12a66d182fedfb51fd830d7894d3392baf6979a5-34cb6730eac08c8743bf2e6253e47d3d-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/AND-FLIX/mpegts?token=ec94596746cc140bc1ae42cc183cd314d96436f8-0c6ce3db008901f0b9fda2a5013f0f60-1781258148-1781247348&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="And Picture HD" tvg-logo="http://iptvidn.com/assets/images/andpictureshd.jpg" group-title="Movies",And Picture HD
-http://103.89.248.30:8082/and-picture-HD/mpegts?token=85ad0a45fd449cac39e7c03427731ff57db0757e-b907f852c27f809148ceb3ec04eca3b0-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/and-picture-HD/mpegts?token=a930974db08378b7e142d235912f29d87cf72365-8b80d8066839b9e67df782739e368255-1781258148-1781247348&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="AND TV" tvg-logo="http://iptvidn.com/assets/images/and tv.jpeg" group-title="Movies",AND TV
-http://103.89.248.30:8082/AND-TV/mpegts?token=efb7d0a6adfdb89fea23035f996e7256706da140-41794b40518e7037f1fc0a13afecd248-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/AND-TV/mpegts?token=713ad59e8435953fbb2cbafbdb7f90a623b2cdfd-64d7cae3e3cf2a314fea643325d5f27d-1781258141-1781247341&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="AXN" tvg-logo="http://iptvidn.com/assets/images/axn.jpg" group-title="Movies",AXN
-http://103.89.248.30:8082/AXN/mpegts?token=40ad20cc4b87e3e2db50872e5e9e3a4b9407089c-722c59d76b588c1445f4951aa0fa0f1a-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/AXN/mpegts?token=a5974e7460269314d6db3f975a2449ea98e77c7b-8fb7bbf65a692f963622f3f504d839ee-1781258143-1781247343&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="B4U MOVIES" tvg-logo="http://iptvidn.com/assets/images/b4umovies.jpg" group-title="Movies",B4U MOVIES
-http://103.89.248.30:8082/B4U-MOVIES/mpegts?token=7ee7f2223be3102ed51c37cea56c59103a736aa6-424e95f72afe92a467eaa18a1082d3d2-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/B4U-MOVIES/mpegts?token=57f04c268de40526cd2dea408296e8ff4039ca0d-5af6c480e82124c57f52c0919eea2e24-1781258143-1781247343&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Colors Bangla" tvg-logo="http://iptvidn.com/assets/images/colorsbangla.jpg" group-title="Movies",Colors Bangla
-http://103.89.248.30:8082/Colors-Bangla/mpegts?token=ee8bacc476f55128e03b66cd70264702fe1535d8-49650137a790f15d8e49a8a39118dc5b-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/Colors-Bangla/mpegts?token=d815edcb24b0060710d815bfebc03da95b66dac0-4722e0079f3c123f46393ad7a1f601e3-1781258142-1781247342&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="COLORS BANGLA CINEMA" tvg-logo="http://iptvidn.com/assets/images/colar-bangla-cinema.jpg" group-title="Movies",COLORS BANGLA CINEMA
-http://103.89.248.30:8082/COLORS-BANGLA-CINEMA/mpegts?token=2467de706ad2c506ec4d306dcd2267b807b3da82-b6d3b3129ffbaba797d7c581372698b5-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/COLORS-BANGLA-CINEMA/mpegts?token=8f3b849cd12a5154aa814f5fbe35227fd20c2d42-abb0802cd85c6ef1f2de62343ba0657b-1781258142-1781247342&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="HBO" tvg-logo="http://iptvidn.com/assets/images/hbohd.jpg" group-title="Movies",HBO
-http://103.89.248.30:8082/HBO/mpegts?token=ef9c1003699078ba1e825b40b3aaa2ecf65bf472-b89eced8d2e5ef28e4e0fd0301fcfc20-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/HBO/mpegts?token=e93f3a92c5720aaec2a852276f59b9a1c17b56cc-872189cebf5fd809bd1fa9d99976e628-1781258143-1781247343&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="MN Plus" tvg-logo="http://iptvidn.com/assets/images/mnplushd.jpg" group-title="Movies",MN Plus
-http://103.89.248.30:8082/MN-Plus/mpegts?token=c3acec6e2c4b284c23fb4dfd419c58d9fbd0a71b-a5b9cc9f05fe512122622132a9bce9e5-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/MN-Plus/mpegts?token=dd54b8d613343f7bb1abe5a24e99b3c970aaddf8-6d55673b541d349e5958bdbc5401363b-1781258152-1781247352&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Mtv Beats" tvg-logo="http://iptvidn.com/assets/images/mtvbeats.jpg" group-title="Movies",Mtv Beats
-http://103.89.248.30:8082/mtv-beats/mpegts?token=4afbb2c4d0c22c9f4589cceab4e1de8eef287b55-2992ff833116925be137c1e1c0e1253e-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/mtv-beats/mpegts?token=59406c5d4a82b003bbceaaefd0f97c9f418b78c9-b6c9ba89e7fd0cb2ca2ca770ae37f311-1781258147-1781247347&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="My Time" tvg-logo="http://iptvidn.com/assets/images/my time.jpg" group-title="Movies",My Time
-http://103.89.248.30:8082/my-time/mpegts?token=6ad3aa37b37dbe9fae9ccc7121ce40151d340f10-eafbba410707b00f4f22e36859516ed2-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/my-time/mpegts?token=8e6eb4b70c1e473c8a6a63a77e83cba770535d5b-3997690e741cfa01ac2d7516e73acf60-1781258143-1781247343&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="SONY MAX" tvg-logo="http://iptvidn.com/assets/images/sonymaxhd.jpg" group-title="Movies",SONY MAX
-http://103.89.248.30:8082/SONY-MAX/mpegts?token=1eeb4d8109297091cd3fc06913e9ba42b1a069b1-3c6a407f91bf8743f7ed18eaeaae60d1-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/SONY-MAX/mpegts?token=631d11fab00c0bb479959d4aaad06e5e31ba4f8c-80f3826eb053aa1ea21c1f6beb865097-1781258146-1781247346&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Sony Max2" tvg-logo="http://iptvidn.com/assets/images/sony max2.jpeg" group-title="Movies",Sony Max2
-http://103.89.248.30:8082/sony-max2/mpegts?token=de9061fc7d9513ed3b574123c194fa6b9d3f93b1-d520ae0bc06fc33e5c97190bafd154e1-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/sony-max2/mpegts?token=087cba45615e825675b0bbb5ac6542fe2ee21114-4f2adc2c5997d3df16090d651d9ae794-1781258146-1781247346&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Sony Pix Hd" tvg-logo="http://iptvidn.com/assets/images/sonypix.jpg" group-title="Movies",Sony Pix Hd
-http://103.89.248.30:8082/sony-pix-hd/mpegts?token=2b0ae9714d6c5e8eac4b4ace6e80ac10f8665875-3414a06d3b3a5a9d3dab9038878c3642-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/sony-pix-hd/mpegts?token=60abb25b8aee3ef133fb229cde44af38b1a066c7-4fad24f070a4a467802f7bfc26576b00-1781258147-1781247347&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Star Gold" tvg-logo="http://iptvidn.com/assets/images/stargold.jpg" group-title="Movies",Star Gold
-http://103.89.248.30:8082/star-gold/mpegts?token=dc00766dc0ccd3f6a3d9145457ed0ce41f89f407-d102d6f524656029ba4c943257ae95a4-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/star-gold/mpegts?token=534322273f9f273e1d435e4b9782bd531e22f089-3f246086b3772e70209f9e3dbdfec69a-1781258144-1781247344&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Star Gold 2" tvg-logo="http://iptvidn.com/assets/images/stargold2.jpg" group-title="Movies",Star Gold 2
-http://103.89.248.30:8082/star-gold-2/mpegts?token=e73fbc6b4b81ba5169f818683730a298e02bc945-ac1f37e6401f5fe6fa8b541cb9716d74-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/star-gold-2/mpegts?token=365ab3c7515ba1b30c421757b9105e9c86a40c0d-06269932b2cede1a7aa87c23b9794534-1781258144-1781247344&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="STAR GOLD ROMANCE" tvg-logo="http://iptvidn.com/assets/images/stargoldromance.jpg" group-title="Movies",STAR GOLD ROMANCE
-http://103.89.248.30:8082/STAR-GOLD-ROMANCE/mpegts?token=4cfd2788634a4795dd303ce069b937be6f8b02f8-e10d20dc82d8c61347374703781ad2a5-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/STAR-GOLD-ROMANCE/mpegts?token=5acdf8c6ef2d5520e49e7bd05e2e0410831f29f1-930bfe69415d49c300ec77f336ddf14d-1781258145-1781247345&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="STAR GOLD THRILLS" tvg-logo="http://iptvidn.com/assets/images/stargoldthrills.jpg" group-title="Movies",STAR GOLD THRILLS
-http://103.89.248.30:8082/STAR-GOLD-THRILLS/mpegts?token=66c67550ae28120ccff10315cb255d1519a9387c-1e883215eaa86fb988c5d51985b82830-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/STAR-GOLD-THRILLS/mpegts?token=350f5e98d2e560ce4fb98f7d1019b3722291e038-3da5b8f5a2efe9e4da6c5e1e6319460f-1781258144-1781247344&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="STAR MOVIES SELECT" tvg-logo="http://iptvidn.com/assets/images/starmovieshd.jpg" group-title="Movies",STAR MOVIES SELECT
-http://103.89.248.30:8082/STAR-MOVIES-SELECT/mpegts?token=3997f4ecc85d0d26fe7498e2fc66d829961d7113-621e263e261a2159c170065c56d3f868-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/STAR-MOVIES-SELECT/mpegts?token=f7df3812610d138eaf7155d493f5f1c0ff301cdb-350db51ef2c19e057fb7de8137240eb9-1781258144-1781247344&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="ZEE ANMOL CHANEMA" tvg-logo="http://iptvidn.com/assets/images/zeeanmol.jpg" group-title="Movies",ZEE ANMOL CHANEMA
-http://103.89.248.30:8082/ZEE-ANMOL-CHANEMA/mpegts?token=dec1a655892fff48766196179f8d3356a40b3e68-87e2d0cb3d0572d9da2056aca32de792-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/ZEE-ANMOL-CHANEMA/mpegts?token=93696450953d14c58f939fde96ca5774fbe818d8-f7fe86e4065acc974f161613ac524c91-1781258143-1781247343&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="ZEE BANGLA CINEMA" tvg-logo="http://iptvidn.com/assets/images/zeebanglacinema.jpg" group-title="Movies",ZEE BANGLA CINEMA
-http://103.89.248.30:8082/ZEE-BANGLA-CINEMA/mpegts?token=5f20613bafd20122fac8af639a25b57eddcd92ee-a554fb263828e6cdbab4d9845d878e86-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/ZEE-BANGLA-CINEMA/mpegts?token=560f6f5e03e0a2809450b14d66eac6b79b2f6644-3d0dde274bd877d07f497d6d825ec412-1781258142-1781247342&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Zee Cinema HD" tvg-logo="http://iptvidn.com/assets/images/zee cinema.jpeg" group-title="Movies",Zee Cinema HD
-http://103.89.248.30:8082/Zee-Cinema-HD/mpegts?token=2f1d78340c1a94c7347fecc8c14a2d2b4d7778e8-ebf286a4f7b883a559e1e3c89a092c89-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/Zee-Cinema-HD/mpegts?token=11ed4fe2f20f1b702b26b0d3f453e6b352fc4a6f-5fb8a243b9d64343a542ab8dce40db89-1781258142-1781247342&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Zee Tv Hd" tvg-logo="http://iptvidn.com/assets/images/zee tv.jpeg" group-title="Movies",Zee Tv Hd
-http://103.89.248.30:8082/zee-tv-hd/mpegts?token=668c057dd0db0c1f3b61046521c49e415058385e-94eb4301a29e8c120e244efab190c551-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/zee-tv-hd/mpegts?token=17cf6c130ef193c9a5baf6cff136402dd2e80e3f-6c6f76ac7a5bf02c1587e99143a81098-1781258142-1781247342&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="9X JALWA" tvg-logo="http://iptvidn.com/assets/images/9xjalwa.jpg" group-title="Music",9X JALWA
-http://103.89.248.30:8082/9X-JALWA/mpegts?token=4828a4b9579a0ee504a0ba5b67d318fabd98997f-9ae677f8746a8e081a33b02f5cb9ad4e-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/9X-JALWA/mpegts?token=0e8983901f57c5654eca03f472b2fc454f250b61-9f81d0720c898f189934ce9addc17415-1781258152-1781247352&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="9XM" tvg-logo="http://iptvidn.com/assets/images/9xm.jpg" group-title="Music",9XM
-http://103.89.248.30:8082/9XM/mpegts?token=c001bcf329417f810e738e0d3243fa396275d506-ee7aacdac565584f0940be59c1536435-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/9XM/mpegts?token=53ca3b391dfae1dca900a11528ae9e79b6765714-25c84a03f5f8fe482bb72d01a79e39fe-1781258152-1781247352&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="B4U MUSIC" tvg-logo="http://iptvidn.com/assets/images/b4umusic.jpg" group-title="Music",B4U MUSIC
-http://103.89.248.30:8082/B4U-MUSIC/mpegts?token=a4fec05cc5aa49cf7ef479ec1d8aa3033259a140-47439ad399b1f7dcdb7c0136ba1b4858-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/B4U-MUSIC/mpegts?token=5cfc7ab99cd1470859b61aae9e3642c58a1e6fd7-6e306ea6617d53f61e8ed25a9aebb0ee-1781258152-1781247352&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="SANGEET BANGLA" tvg-logo="http://iptvidn.com/assets/images/Sangeetbangla.jpg" group-title="Music",SANGEET BANGLA
-http://103.89.248.30:8082/SANGEET-BANGLA/mpegts?token=e5ab59ef6f2c8885d419025a7d77ee62b1ffb97e-df030e33b46b39a3a2a5e338d42cb4c9-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/SANGEET-BANGLA/mpegts?token=7a14ffacda623ade13edcc53c732be6592083333-94a882967301ac79b2f896c948fbbea3-1781258152-1781247352&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Xite Music" tvg-logo="http://iptvidn.com/assets/images/Xitemusic.jpeg" group-title="Music",Xite Music
-http://103.89.248.30:8082/xite-music/mpegts?token=e9d1eddeff778fd0d8c4a62e3c50d954b597f2c4-39248a4f534dd63bbbf5f1549e8deee4-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/xite-music/mpegts?token=3d2c7b67b887078554848a74a0ddc4166968a09c-45d91ea0424a2c1c07717994b3a39529-1781258153-1781247353&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="BBC Earth" tvg-logo="http://iptvidn.com/assets/images/bbcearthhd.jpg" group-title="News",BBC Earth
-http://103.89.248.30:8082/BBC-Earth/mpegts?token=edfa0fcb8ca7f5101c806273ff368eb1f6e4dbed-04e0f70233866745949961d7f5eae1e5-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/BBC-Earth/mpegts?token=5c5efd4d26fac3f510f0ea300403a75387445e1a-b8617c2561a03cd8d05ba6d0ddacb870-1781258140-1781247340&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="BBC NEWS" tvg-logo="http://iptvidn.com/assets/images/bbcnews.jpg" group-title="News",BBC NEWS
-http://103.89.248.30:8082/BBC-NEWS/mpegts?token=e2081764b376808a6d49534407d099eda8d284d8-05139005d46791cdf74dc35741733a5a-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/BBC-NEWS/mpegts?token=26ee9ca3c40f07e7dbdd2f361f5209c0a28bd604-17818d9fc7b3d4da9f6f056854b9e9a4-1781258139-1781247339&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="CNN" tvg-logo="http://iptvidn.com/assets/images/cnnnews.jpg" group-title="News",CNN
-http://103.89.248.30:8082/CNN/mpegts?token=216dfdffb8b77a60641031d8595f587d9bcfe13d-6440c1573cf69fc51a5ba7a8ca68c121-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/CNN/mpegts?token=76d034ec74bc3ecbef173f2ec06df9f9893a3df8-83f3a740b564861f9d66445331a070e4-1781258140-1781247340&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="A SPORTS" tvg-logo="http://iptvidn.com/assets/images/a-sports.jpg" group-title="Sports",A SPORTS
-http://103.89.248.30:8082/A-SPORTS/mpegts?token=e7c9f34650e7c97c08269eeba6580411b60c0544-4a15188a976774b9433e0dc9057dd85c-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/A-SPORTS/mpegts?token=b01a84887bc5f8cea5194ea84b39c65b61b82272-623e508ce9d825bfdb765f22a80db773-1781258138-1781247338&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Afgan Sports" tvg-logo="http://iptvidn.com/assets/images/AFGAN.jpg" group-title="Sports",Afgan Sports
-http://103.89.248.30:8082/Afgan-Sports/mpegts?token=171f047a59edebac4dfb3bc1cd5aa949ce522c40-d8462f80c307ce92da73b59d063547b0-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/Afgan-Sports/mpegts?token=fa6ed7820d871d60419ff25e0cc66cb822b50bf2-445652dddd60d2a1870d5073f36b4111-1781258132-1781247332&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="AND XPLORE" tvg-logo="http://iptvidn.com/assets/images/band sports.jpg" group-title="Sports",AND XPLORE
-http://103.89.248.30:8082/AND-XPLORE/mpegts?token=5f7253f25e47e87ca3f2a4040dd3cd3c5e78031f-6d44fd2d8ea112b5fc73b5dc105559da-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/AND-XPLORE/mpegts?token=29204a5e8886f8314027b7fd4eac0fbff05a2105-4a84794ff483a616b8e8167ad54f62e3-1781258139-1781247339&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Bein Hd" tvg-logo="http://iptvidn.com/assets/images/bein1.jpg" group-title="Sports",Bein Hd
-http://103.89.248.30:8082/Bein-hd/mpegts?token=71f59456b43aa7b099d0d735a8cd56f972d48a87-9964336a81186b341b056fc96ccc96df-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/Bein-hd/mpegts?token=169a4397b3c52d4790429756cf2e99ef1372b299-bf3a7f16f6e5d3cd0938ee2596b5779d-1781258133-1781247333&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="BEIN SPORTS 2" tvg-logo="http://iptvidn.com/assets/images/bein2.jpg" group-title="Sports",BEIN SPORTS 2
-http://103.89.248.30:8082/BEIN-SPORTS-2/mpegts?token=c14c4cc538965bc058abfb880152a68251c67417-2b85d7851515e3b7bebfd49925fb1e56-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/BEIN-SPORTS-2/mpegts?token=80332a63b4c2594c6b2f099bfb8abe3830ed0bfb-492cb9b7ee01e53ad47739cf7985106e-1781258134-1781247334&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="BEIN SPORTS 3" tvg-logo="http://iptvidn.com/assets/images/bein3.jpg" group-title="Sports",BEIN SPORTS 3
-http://103.89.248.30:8082/BEIN-SPORTS-3/mpegts?token=3148db28693af7089e87cacb26e92f36c7276324-c052cceed6ba0bb30df028783177a203-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/BEIN-SPORTS-3/mpegts?token=6bcbb543bd46f878bd43347528e5f5adc7a1a363-90c6156c1268bdc1c50fc9b02bd0b7f4-1781258134-1781247334&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Bein Sports 4" tvg-logo="http://iptvidn.com/assets/images/bein4.jpg" group-title="Sports",Bein Sports 4
-http://103.89.248.30:8082/Bein-Sports-4/mpegts?token=37c5c3fe813f8569459613da2778c9f03c65a1cd-327f29b80c9fb2374044c78a4f344744-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/Bein-Sports-4/mpegts?token=22dc8d5d07236bf74863cd311711949cae9c89b2-0daca47481c9a2b12dc65b5bb1a35b51-1781258134-1781247334&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="DUBAI SPORTS 2" tvg-logo="http://iptvidn.com/assets/images/dubai sports.jpg" group-title="Sports",DUBAI SPORTS 2
-http://103.89.248.30:8082/DUBAI-SPORTS-2/mpegts?token=8b970ee1efb37a297abe468bbc35027074b754a1-f338e9f96cf7b17795682c3a0223d2f5-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/DUBAI-SPORTS-2/mpegts?token=2d9d69162a41b3445cb6b010ac00a93c1bf20ee8-e883eb998f8198586c731bf700e9deef-1781258139-1781247339&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Dubai Sports 3" tvg-logo="http://iptvidn.com/assets/images/dubai sports.jpg" group-title="Sports",Dubai Sports 3
-http://103.89.248.30:8082/dubai-sports-3/mpegts?token=c2d4dbeb2e7c396583e749045eab04ec45c305cc-429374eaa60858f813a17c858b7ec2bc-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/dubai-sports-3/mpegts?token=6b47ba50ed3405e99c89d4bfb7c1b47b74af4140-29c2188978009fefedf509bc6f0c33ec-1781258139-1781247339&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="ESPN 1" tvg-logo="http://iptvidn.com/assets/images/espnhd.jpg" group-title="Sports",ESPN 1
-http://103.89.248.30:8082/ESPN-1/mpegts?token=f3db53cdc1a9d9de4d9d5208ffdfca1ff8cbac4a-96d7511c44253f6f199e366e2ba84fc6-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/ESPN-1/mpegts?token=3603353081ea00fdcbf4cde1a4c40b5df7f111e1-3c2e47b4ea12229874df3fbcc989c487-1781258139-1781247339&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Eurosports" tvg-logo="http://iptvidn.com/assets/images/eurosports1.jpg" group-title="Sports",Eurosports
-http://103.89.248.30:8082/Eurosports/mpegts?token=07f241e50364b678dddeaf7596c4acc6dd76e9cf-a5449fb4b8e957ec1bee69abf6bce8ed-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/Eurosports/mpegts?token=c2285656a637b5378f5323eb96daa53095423fc7-d4fd9d6a12e02ee9666344d6dde746cf-1781258138-1781247338&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="FOX SPORTS" tvg-logo="http://iptvidn.com/assets/images/fox.jpg" group-title="Sports",FOX SPORTS
-http://103.89.248.30:8082/FOX-SPORTS/mpegts?token=1e1ab15786c4f962d381d4192324d4b296085deb-bc4095d824e4d55ac14f25bfb0b13d94-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/FOX-SPORTS/mpegts?token=911c5cca1293bba5e93bde9b2c7a71e152ea2932-cd16d619047d58926c36e078942d29b1-1781258135-1781247335&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="FOX SPORTS1" tvg-logo="http://iptvidn.com/assets/images/foxsports1.jpg" group-title="Sports",FOX SPORTS1
-http://103.89.248.30:8082/FOX-SPORTS1/mpegts?token=1aaf628daa15896bcc317b2e970411c358a6ea79-8331484d53d5def8de2f282555b2122f-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/FOX-SPORTS1/mpegts?token=a6068df4eaf0013a96bee64351637db9ab6e4914-e93bd2211e74124fef71b625e8f5a584-1781258135-1781247335&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="GEO SPORTS" tvg-logo="http://iptvidn.com/assets/images/geosuper.jpg" group-title="Sports",GEO SPORTS
-http://103.89.248.30:8082/GEO-SPORTS/mpegts?token=1dd6226d51c905c3b771ad981ca7ce1aef286683-60f7747206f62f76c46f40dfc1f2d57b-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/GEO-SPORTS/mpegts?token=3e427a5f94556db81489d70b8cd3add2d126731f-3725a71191f2ec9c492141b43d03bc3e-1781258133-1781247333&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="MUTV" tvg-logo="http://iptvidn.com/assets/images/mutv.jpg" group-title="Sports",MUTV
-http://103.89.248.30:8082/MUTV/mpegts?token=3c7d8ee89438762a2d28b476d0d7bd7868983ba2-34cb77c43289f78fe59ac9b622d72a5b-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/MUTV/mpegts?token=843c7235e16536e66186659bd5fd851f1f6aa1e0-19449b06c99dfce4a0b50c6afc9b0b23-1781258133-1781247333&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="PTV" tvg-logo="http://iptvidn.com/assets/images/ptvsports.jpg" group-title="Sports",PTV
-http://103.89.248.30:8082/PTV/mpegts?token=f50a076ce73e42442b7b3a8e29f5b52fb4b1e4c6-e5bb61917a316f71baedcc39680472c9-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/PTV/mpegts?token=5f510475f7d052ae35eda109f6c97e9acd027d00-93423b9bda9aec709129fbebb5f5e9f8-1781258130-1781247330&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Sky Sports Cricket" tvg-logo="http://iptvidn.com/assets/images/skycricket.jpg" group-title="Sports",Sky Sports Cricket
-http://103.89.248.30:8082/Sky-Sports-Cricket/mpegts?token=7a4fa6ae9adf1febabbaebcc406a66d515816d69-4f27c132181f55bae413f4b4c2a90f91-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/Sky-Sports-Cricket/mpegts?token=d00197eacbe970da6ef7080e77b2bdb1da70ef2c-89ca0e6d10864ae8e6b41043f7e7c85d-1781258136-1781247336&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="SKY Sports Football" tvg-logo="http://iptvidn.com/assets/images/skyfootball.jpg" group-title="Sports",SKY Sports Football
-http://103.89.248.30:8082/SKY-Sports-Football/mpegts?token=925c704bfdc921be41be806836f69bf5b2d1415a-b8e3e18a997ef8fb8c34c3b148996c15-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/SKY-Sports-Football/mpegts?token=35f7ecc406b28795bf4a5f7489ccceb278ad0226-61528cf56225a2b964e8b73b0742a667-1781258136-1781247336&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Sky Sports Main Event" tvg-logo="http://iptvidn.com/assets/images/skymainevent.jpg" group-title="Sports",Sky Sports Main Event
-http://103.89.248.30:8082/Sky-Sports-Main-Event/mpegts?token=cf41349e8045ded157ff7960eb2e03f2d9c61cc1-bb42004d08055e2950c387a87677d825-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/Sky-Sports-Main-Event/mpegts?token=8b8376e916f72b1d2ff73c603ebb8ce6768fb4ae-d66a6b57b5d7ce141e388631b3233208-1781258136-1781247336&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Sky Sports Premier League" tvg-logo="http://iptvidn.com/assets/images/skypremierleague.jpg" group-title="Sports",Sky Sports Premier League
-http://103.89.248.30:8082/Sky-Sports-premier-League/mpegts?token=e806d61995bf9921186df91c2c5369d78f9c34e5-45d042a8fcd35c4656935da3ff231070-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/Sky-Sports-premier-League/mpegts?token=89ae9229b2d3bedfc93caca10321fd3ee2f1a81c-c61c36f7b4e6bd2d950c9ccd95c902a0-1781258136-1781247336&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Sony TEN 1" tvg-logo="http://iptvidn.com/assets/images/sonyten-1.png" group-title="Sports",Sony TEN 1
-http://103.89.248.30:8082/Sony-TEN-1/mpegts?token=9241745ca3f2d7928fa5ebad09070c0f8ebe2e29-43aa97762008003043f32a699b3493f9-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/Sony-TEN-1/mpegts?token=b6a9af11fee82f585716ac633396fe46d2b4ccf7-7801a6ebc6a2770383ce0f9c6c22c4f1-1781258137-1781247337&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Sony TEN 2" tvg-logo="http://iptvidn.com/assets/images/sonyten2.png" group-title="Sports",Sony TEN 2
-http://103.89.248.30:8082/sony-TEN-2/mpegts?token=096247c6f711da0bef6e7692458eeb98a1bb98cd-c3f7a22d7fe85e37d3b7cb1046955c51-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/sony-TEN-2/mpegts?token=2fd6f4464be4785233d8043f9f91486e32a81a63-6eb5b213b76ffc22874143a0ea8d7954-1781258137-1781247337&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Sony TEN 5" tvg-logo="http://iptvidn.com/assets/images/sonyten5.png" group-title="Sports",Sony TEN 5
-http://103.89.248.30:8082/Sony-TEN-5/mpegts?token=0327ece3b8e628f7ae7dcefb22d705c093a515ad-502ee540ce92168ad759c52cbf19ee19-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/Sony-TEN-5/mpegts?token=71d35d80c96acb17facf88ce15a82737cea15b89-2fc553dbd18f9a5b999c2a703f2edb4a-1781258138-1781247338&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Sony Ten3" tvg-logo="http://iptvidn.com/assets/images/ten3hd.jpg" group-title="Sports",Sony Ten3
-http://103.89.248.30:8082/sony-ten3/mpegts?token=fdd5e23144ec1f93d8b7452fedbf0c97e92faed7-faaf4f5db962f8284aab2b08320f3d5e-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/sony-ten3/mpegts?token=4865114d641873957bb10fd33f070a6dd57c260b-e11454ab4feb5367360174d62540ed67-1781258137-1781247337&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="SPORTS 18" tvg-logo="http://iptvidn.com/assets/images/Sports18-S1.jpg" group-title="Sports",SPORTS 18
-http://103.89.248.30:8082/SPORTS-18/mpegts?token=c68923bdf262b42a5824e633432c69b5f2e2936e-5f011e3f032cb4ebc980655ff74c1603-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/SPORTS-18/mpegts?token=00cd6698a69ef3dee584bbc09b02e18be412a03b-65293b37bea13f02254772f1bb93124d-1781258138-1781247338&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Sportv" tvg-logo="http://iptvidn.com/assets/images/sportv.jpeg" group-title="Sports",Sportv
-http://103.89.248.30:8082/Sportv/mpegts?token=41b12aa448ea677ddf5c0665d3d9c85a1ec07438-69f12736eca416b2e03a9afd24f6d0ac-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/Sportv/mpegts?token=3d2819cc333a47bb22c553e5b31690cc54a00b60-841c7cc03c375368a0579a3508d6681f-1781258133-1781247333&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="SSC1" tvg-logo="http://iptvidn.com/assets/images/SSC.jpg" group-title="Sports",SSC1
-http://103.89.248.30:8082/SSC1/mpegts?token=c19c5a906f878e040340177a709cfe4244a8bdae-8b6cd936ca041e1e8f78b320b0b25766-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/SSC1/mpegts?token=3f444651140b0813244f619b52e83cb83bdb6c88-ac756437cfd583c3e78f83fb318a332b-1781258133-1781247333&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Star Sport 3" tvg-logo="http://iptvidn.com/assets/images/starsports3.jpg" group-title="Sports",Star Sport 3
-http://103.89.248.30:8082/Star-sport-3/mpegts?token=856b599b22ffbe422bd07eefbee3556a40242bf4-c79be5a9145764e92338c5459a118e57-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/Star-sport-3/mpegts?token=922ea362c894343c460e17407a61e6d41905af7f-2c694a78a5ee425847ba9a82871a5b12-1781258138-1781247338&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="STAR SPORTS 1" tvg-logo="http://iptvidn.com/assets/images/starsports1.jpg" group-title="Sports",STAR SPORTS 1
-http://103.89.248.30:8082/STAR-SPORTS-1/mpegts?token=34918f392a261e3bf83f2d5ff9b136e3f5e1afba-90fb106c607acfcb814b579d91a38265-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/STAR-SPORTS-1/mpegts?token=dd22e8f87fd1c29add7a36aaa260045b3e92bf73-defbc89694478c63cb9310208f46b20d-1781258130-1781247330&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="STAR SPORTS 2" tvg-logo="http://iptvidn.com/assets/images/starsports2.jpg" group-title="Sports",STAR SPORTS 2
-http://103.89.248.30:8082/STAR-SPORTS-2/mpegts?token=e3a165577d439992993250645f796aacf17e8a3a-d0259690dca03b53421b14a9d9134400-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/STAR-SPORTS-2/mpegts?token=472177df4010e08a3655b217fe35de1fe2409586-1dfc5427540fe74e7340bae11b58a149-1781258130-1781247330&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Star Sports Select 1" tvg-logo="http://iptvidn.com/assets/images/starselect1.jpg" group-title="Sports",Star Sports Select 1
-http://103.89.248.30:8082/Star-sports-select-1/mpegts?token=a0fe9217f421374c5fffc86333a1bce5f9edd742-979166d26d3146c728abb12a9cabd85a-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/Star-sports-select-1/mpegts?token=03832e25cce6234fb27c734389829281314f7938-92928e1a0366f935ba24d642d99641e0-1781258137-1781247337&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Star Sports Select 2" tvg-logo="http://iptvidn.com/assets/images/starselect2.jpg" group-title="Sports",Star Sports Select 2
-http://103.89.248.30:8082/Star-sports-select-2/mpegts?token=cec554a7d7fd516b994ecb9cc8bcab53cada2756-7bd5e80c926ae907be16e123c82b1bec-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/Star-sports-select-2/mpegts?token=9878cfeb4e3f3325fc1d9946faf114b15e842a8b-30fc2cd91b0e68d892fe56612d7593e4-1781258137-1781247337&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="SUPERSPORTS CRICKET" tvg-logo="http://iptvidn.com/assets/images/Supersportscricket.jpeg" group-title="Sports",SUPERSPORTS CRICKET
-http://103.89.248.30:8082/SUPERSPORTS-CRICKET/mpegts?token=95a26734baa7d003d03690685a483ab5bca505f6-99c131c9f9cd12e2ba4e1e7ba78db9bc-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/SUPERSPORTS-CRICKET/mpegts?token=a003c6d5da6d7523a06e03e5f0cc2c64f5571d40-646148f3f7a51d88aff6c5567a8a5bd2-1781258132-1781247332&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="SUPERSPORTS FOOTBALL" tvg-logo="http://iptvidn.com/assets/images/Supersportsfootball.jpeg" group-title="Sports",SUPERSPORTS FOOTBALL
-http://103.89.248.30:8082/SUPERSPORTS-FOOTBALL/mpegts?token=1bf802daba2b1fd1eb819d83356c4e87ce32c706-a44f4776ddacba98ceedfbafa16a7f15-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/SUPERSPORTS-FOOTBALL/mpegts?token=dfe0e65dca6b11cc5fb87d19f63230a2cdb4daf5-19b76ff4d80cf061d32524aff6a83c9d-1781258132-1781247332&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="SUPERSPORTS LALIGA" tvg-logo="http://iptvidn.com/assets/images/laliga.jpg" group-title="Sports",SUPERSPORTS LALIGA
-http://103.89.248.30:8082/SUPERSPORTS-LALIGA/mpegts?token=dff61ab4560ec64e5fa630836e0b56ca5ddeb50c-54fb0362761b54d4c2086a81cf279f95-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/SUPERSPORTS-LALIGA/mpegts?token=bb174f49b0da2b86fa6ce68c336e3f8d2baff5e1-ab58d5d07cff081332e50831996c8bf5-1781258132-1781247332&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="SUPERSPORTS PREMIER LEAGUE" tvg-logo="http://iptvidn.com/assets/images/premer league.jpg" group-title="Sports",SUPERSPORTS PREMIER LEAGUE
-http://103.89.248.30:8082/SUPERSPORTS-PREMIER-LEAGUE/mpegts?token=d9e6a51db61083f968d5f61dab6b7017cc25ab2f-43762858955dd9cc668a15d1270e4cc4-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/SUPERSPORTS-PREMIER-LEAGUE/mpegts?token=d53a51df04aaaeb27216998f73778986810d08d4-a1c0063bd793205eac4595e644fcb2d3-1781258132-1781247332&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Ten Cricket HD" tvg-logo="http://iptvidn.com/assets/images/tencricket.jpg" group-title="Sports",Ten Cricket HD
-http://103.89.248.30:8082/Ten-Cricket-HD/mpegts?token=315b4693c36605551ec72b75b5ea83d9fede3507-6b16054c34881e0e014ecd1613a1ae3f-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/Ten-Cricket-HD/mpegts?token=f5237a158ef9b81de329ddff67ed60d559fb1406-255a93feaa12fbd04efdaea44ce49718-1781258134-1781247334&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="TNT Sports 1" tvg-logo="http://iptvidn.com/assets/images/tntsports1.jpeg" group-title="Sports",TNT Sports 1
-http://103.89.248.30:8082/TNT-Sports-1/mpegts?token=c2b1379fcbe467a2103c6cb2ab804f826fb50aab-b28a887859f3e0002d3105fdda90f810-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/TNT-Sports-1/mpegts?token=54ff7db18b3e8c5acf719f9da61e80e23af69c4c-86d741eaaaf91cacb7b8114ed964de22-1781258134-1781247334&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="TNT Sports 2" tvg-logo="http://iptvidn.com/assets/images/tntsports2.jpeg" group-title="Sports",TNT Sports 2
-http://103.89.248.30:8082/TNT-Sports-2/mpegts?token=6ce402100d2e0f115f8b30b68bc3cf28a807b16a-48da18d24fdc5688335600e8a7d5943b-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/TNT-Sports-2/mpegts?token=77806108ab180e0d9a874a7e6368af1440114662-11b37ead723a72181ab6d0ed2f764ec5-1781258135-1781247335&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="TNT Sports 3" tvg-logo="http://iptvidn.com/assets/images/tntsports3.jpeg" group-title="Sports",TNT Sports 3
-http://103.89.248.30:8082/TNT-Sports-3/mpegts?token=1d68ad6da9db80cd295a5fa287ef7b6ab1755d29-9f2fb6802a140c7a9575b84975e19309-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/TNT-Sports-3/mpegts?token=3b0414d7b06e74e13e5c3ea1a9ae9e4f508b4dd9-ff43f7fa2af68c86175665474027d300-1781258135-1781247335&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Uk TNT 4" tvg-logo="http://iptvidn.com/assets/images/tnt sports4.jpg" group-title="Sports",Uk TNT 4
-http://103.89.248.30:8082/Uk-TNT-4/mpegts?token=ab8da87bc1f65d4d125dc6bee4f07b9fc69f3e71-14f18ebf69e1f30c58d92c21f761c23d-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/Uk-TNT-4/mpegts?token=80a7782c23e6f49650a7e77b853df4376788b1d7-02d9b2af0a68c5fc7e02ef8c064ed0f4-1781258135-1781247335&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
 #EXTINF:-1 tvg-name="Willow" tvg-logo="http://iptvidn.com/assets/images/willowhd.jpg" group-title="Sports",Willow
-http://103.89.248.30:8082/willow/mpegts?token=af877a20b8dd793583285c60bffad63c23470bc4-273763c99d5c54fb35c5faaf5895ca6e-1781220108-1781209308&remote=no_check_ip
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://iptvidn.com/
+http://103.89.248.30:8082/willow/mpegts?token=35555bfa3bf56ecaf89d549263cb1183f9af1984-a8bbd0c60705cf7549e490dfceec955f-1781258136-1781247336&remote=no_check_ip|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F125.0.0.0%20Safari%2F537.36&Referer=http%3A%2F%2Fiptvidn.com%2F
